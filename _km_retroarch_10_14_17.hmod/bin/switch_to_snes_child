@@ -1,0 +1,5 @@
+#!/bin/sh
+
+killall -KILL clover-mcp ReedPlayer-Clover clover-mcp-nes ReedPlayer-Clover-nes
+
+/etc/init.d/S81clover-mcp start

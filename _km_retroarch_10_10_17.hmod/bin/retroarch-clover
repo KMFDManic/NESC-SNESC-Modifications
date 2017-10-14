@@ -1,9 +1,0 @@
-#!/bin/sh
-
-# Kill it! Kill it with fire!
-pkill -KILL clover-mcp
-if [ -f "/bin/remote-exec" ]; then
-  echo retroarch-clover-child $@ > /var/exec.flag
-else
-  exec retroarch-clover-child $@
-fi

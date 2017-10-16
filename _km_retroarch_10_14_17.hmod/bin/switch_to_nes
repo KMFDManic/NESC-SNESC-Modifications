@@ -1,9 +1,0 @@
-#!/bin/sh
-
-
-pkill -KILL clover-mcp
-if [ -f "/bin/remote-exec" ]; then
-  echo switch_to_nes_child $@ > /var/exec.flag
-else
-  exec switch_to_nes_child $@
-fi

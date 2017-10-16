@@ -2,6 +2,8 @@
 
 This module will add support for various arcade games to RetroArch
 
+This particular MAME variant also offers support for Sega System 32 Games
+
 Available executables and arguments:
 - /bin/mame2003 <rom> <clover_args>
   runs "mame2003" core

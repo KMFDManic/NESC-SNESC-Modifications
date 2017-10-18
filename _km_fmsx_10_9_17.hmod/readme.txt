@@ -2,6 +2,8 @@
 
 This module will add support for MSX to RetroArch
 
+NOTE: Save Core Override must be used to keep selected controller upon reboot
+
 The following BIOS images are required for this core to work properly:
 MSX.ROM
 MSX2.ROM

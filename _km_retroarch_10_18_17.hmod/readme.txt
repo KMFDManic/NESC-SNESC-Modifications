@@ -4,6 +4,8 @@ version 1.0
 This is a hakchi/hakchi2 module which adds libretro cores and RetroArch frontend to your NES/SNES Mini.
 If using older than 2.20 Hakchi, this will not work on your NES/SNES Mini properly.
 
+NOTE: You may have to manually exit Hakchi, on occasion, if Home Button/Shortcut for Reset does not work properly!
+
 It will automatically detect unsupported NES games and run them instead of the default emulator. Save states will work as usual.
 
 It can also run games for other consoles. This pack already contains the following cores:

@@ -133,7 +133,7 @@ done
 
 # Screenshot! It's not so fast, doing it in a background...
 if [ ! -z "$screenshot" ] && [ -z "$nosaves" ]; then
-  fbgrab -z 0 "$screenshot" &
+  fbgrab -z 5 "$screenshot" &
   sshot_pid=$!
 fi
 

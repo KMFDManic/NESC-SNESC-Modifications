@@ -9,6 +9,8 @@ Available executables and arguments:
   runs "mgba" core
 - /bin/gba <rom> <clover_args>
   runs "mgba" core
+- /bin/mgba <rom> <clover_args>
+  runs "mgba" core
 
 Core by libretro
 Module by pcm/Updated by KMFDManic

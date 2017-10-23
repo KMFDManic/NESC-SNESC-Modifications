@@ -7,6 +7,8 @@ Available executables and arguments:
   runs "gambatte" core
 - /bin/gbc <rom> <clover_args>
   runs "gambatte" core
+- /bin/gambatte <rom> <clover_args>
+  runs "gambatte" core
 
 Core by libretro
 Module by pcm/Updated by KMFDManic

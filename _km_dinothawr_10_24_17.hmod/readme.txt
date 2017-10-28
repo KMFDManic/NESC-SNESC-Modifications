@@ -7,7 +7,7 @@ Available executables and arguments:
   runs "dinothawr" core
 
 Core by libretro
-Template by pcm/Compiled & Updated by KMFDManic
+Template by pcm720/Compiles & Updated by KMFDManic
 Hakchi module system by madmonkey
 NES Mini shell integration by Cluster
 (c) 2016-2017

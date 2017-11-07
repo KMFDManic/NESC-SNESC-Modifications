@@ -1,16 +1,15 @@
-=== Atari800 Module Core for RetroArch ===
+=== Bios Atari800 Module Core for RetroArch ===
 
-This will add support for Atari 5200/800 to RetroArch
+This will add support for Atari 5200 BIOS to RetroArch
 
 The following BIOS Images are required for this core:
--Atari 5200/800 
+-Atari 5200 
 
 Available executables and arguments:
 -/bin/a52 <rom> <clover_args> Atari 5200
--/bin/atari800 <rom> <clover_args> Atari 5200
 
 Bios for Cores by libretro
-Template by pcm/Compiled & Updated by KMFDManic
+Template by pcm/Module by KMFDManic
 Hakchi module system by madmonkey
 NES Mini shell integration by Cluster
 (c) 2016-2017

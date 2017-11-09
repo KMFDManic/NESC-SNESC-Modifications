@@ -2,6 +2,7 @@
 
 This module will add support for Final Burn Alpha 2012 arcade games to RetroArch
 The BIOS files must be inside the game directory or Via Bios Module where applicable
+7zip works with this Core
 
 Available executables and arguments:
 - /bin/fba <rom> <clover_args>

@@ -2,6 +2,7 @@
 
 This module will add support for CP System I arcade games to RetroArch
 The BIOS files must be inside the game directory or Via Bios Module where applicable
+7zip Support does not function with this Variant.  But, it does with FBA2012/2016
 
 Available executables and arguments:
 - /bin/cps1 <rom> <clover_args>

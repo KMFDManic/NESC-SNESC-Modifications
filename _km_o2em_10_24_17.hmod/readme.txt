@@ -1,11 +1,6 @@
 === O2EM for RetroArch ===
 
 This module will add support for Odyssey2 / Videopac+ games to RetroArch
-One of the following BIOS images is required for this core to work properly:
-o2rom.bin
-c52.bin
-g7400.bin
-jopac.bin
 
 Available executables and arguments:
 - /bin/o2em <rom> <clover_args>

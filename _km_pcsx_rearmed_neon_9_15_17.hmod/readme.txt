@@ -1,10 +1,6 @@
 === PCSX ReARMed Neon core for RetroArch ===
 
 This module will add support for PlayStation games to RetroArch
-The following BIOS images are optional for this core to work properly:
-scph5500.bin
-scph5501.bin
-scph5502.bin
 
 Available executables and arguments:
 - /bin/pcsx <rom> <clover_args>

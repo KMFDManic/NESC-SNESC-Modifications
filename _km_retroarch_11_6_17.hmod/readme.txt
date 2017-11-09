@@ -36,7 +36,7 @@ Known issues:
 - Nintendo 64 save-states are not working, battery backup working fine
 
 Cores by libretro, compiled by pcm
-Updated by Cluster/KMFDManic
+Updated by Cluster/pcm/KMFDManic
 NES Mini port by madmonkey
 NES Mini shell integration by Cluster
 Additional modules by pcm

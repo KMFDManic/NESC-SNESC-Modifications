@@ -1,6 +1,7 @@
 === MAME2010 core for RetroArch ===
 
 This module will add support for various arcade games to RetroArch
+The BIOS files must be inside the game directory or Via Bios Module where applicable
 
 Available executables and arguments:
 - /bin/mame2010 <rom> <clover_args>

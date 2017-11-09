@@ -1,7 +1,6 @@
 === Handy core for RetroArch ===
 
 This module will add support for Atari Lynx games to RetroArch.
-BIOS image lynxboot.img is optional for this core to work properly.
 
 Available executables and arguments:
 - /bin/lnx <rom> <clover_args>

@@ -1,8 +1,6 @@
 === Yabause for RetroArch ===
 
 This module will add support for Sega Saturn games to RetroArch
-The following BIOS image is optional for this core to work properly:
-saturn_bios.bin
 
 Available executables and arguments:
 - /bin/yabause <rom> <clover_args>

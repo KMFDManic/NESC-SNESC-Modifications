@@ -1,0 +1,2 @@
+#!/bin/sh
+exec retroarch-clover bsnes_mercury_performance "$@"

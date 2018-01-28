@@ -1,17 +1,19 @@
-=== MAME2003 core for RetroArch ===
+=== MAME2003 - Sega System 32 Variant Core for RetroArch ===
 
-This module will add support for various arcade games to RetroArch
-The BIOS files must be inside the game directory or Via Bios Module where applicable
+Module adds support for MAME 2003
 
-This Particular MAME Variant also Offers KI/KI2 Support, and NOW System 32!
+Bios must be inside game directory or via Bios Module where applicable
 
-Available executables and arguments:
+This Particular MAME Variant also Offers Very Slow KI/KI2 Support as well as
+Sega System 32 Support!
+
+Available executables and arguments to run Core:
 - /bin/mame2003 <rom> <clover_args>
-  runs "mame2003" core
+- /bin/mame2003-sys32 <rom> <clover_args>
 
 Core by libretro
-Module by pcm/Updated by KMFDManic
-Module suggested and provided by asper
+Template by pcm/Compiled & Updated by KMFDManic
+Personal thanks to asper
 Hakchi module system by madmonkey
 NES Mini shell integration by Cluster
-(c) 2016-2017
+(c) 2016-2018

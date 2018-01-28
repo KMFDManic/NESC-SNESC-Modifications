@@ -1,15 +1,15 @@
-=== MAME 2000 core for RetroArch ===
+=== MAME 2000 Core for RetroArch ===
 
-This module will add support for various arcade games to RetroArch
-The BIOS files must be inside the game directory or Via Bios Module where applicable
+Module adds support for MAME 2000
 
-Available executables and arguments:
+Bios must be inside game directory or via Bios Module where applicable
+
+Available executables and arguments to run Core:
 - /bin/mame2000 <rom> <clover_args>
-  runs "mame2000" core
 
 Core by libretro
-Template by pcm/Updated by KMFDManic
-Module suggested and provided by asper
+Template by pcm/Compiled & Updated by KMFDManic
+Personal thanks to asper
 Hakchi module system by madmonkey
 NES Mini shell integration by Cluster
-(c) 2016-2017
+(c) 2016-2018

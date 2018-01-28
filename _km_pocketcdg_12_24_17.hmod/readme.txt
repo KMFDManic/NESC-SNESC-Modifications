@@ -1,14 +1,14 @@
-=== PocketCDG Module Core for RetroArch ===
+=== PocketCDG Core for RetroArch ===
 
-This will add support for PocketCDG (Karaoke+MP3) to RetroArch
+Module adds support for PocketCDG (Karaoke+MP3)
 
-Available executables and arguments:
--/bin/cdg <rom> <clover_args> PocketCDG
-Available executables and arguments:
--/bin/mp3 <rom> <clover_args> PocketCDG
+Available executables and arguments to run Core:
+-/bin/cdg <rom> <clover_args> 
+-/bin/mp3 <rom> <clover_args> 
+-/bin/pocketcdg <rom> <clover_args>
 
 Core by libretro
 Template by pcm/Compiled & Updated by KMFDManic
 Hakchi module system by madmonkey
 NES Mini shell integration by Cluster
-(c) 2016-2017
+(c) 2016-2018

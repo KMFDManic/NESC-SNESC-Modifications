@@ -1,13 +1,12 @@
 === VBA-M core for RetroArch ===
 
-This module will add support for Game Boy Advance games to RetroArch
+Module adds support for Game Boy Advance
 
-Available executables and arguments:
-- /bin/gba <rom> <clover_args>
-  runs "vbam" core
+Available executables and arguments to run Core:
+- /bin/vbam <rom> <clover_args>
 
 Core by libretro
 Template by pcm/Compiled & Updated by KMFDManic
 Hakchi module system by madmonkey
 NES Mini shell integration by Cluster
-(c) 2016-2017
+(c) 2016-2018

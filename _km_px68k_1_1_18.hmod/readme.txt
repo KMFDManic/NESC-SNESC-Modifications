@@ -1,13 +1,13 @@
-=== PX68K Module Core for RetroArch ===
+=== PX68K Core for RetroArch ===
 
-This will add support for SHARP X68000 to RetroArch
+Module adds support for Sharp X68000
 
-Available executables and arguments:
--/bin/px68k <rom> <clover_args> X68000
--/bin/sharp <rom> <clover_args> X68000
+Available executables and arguments to run Core:
+-/bin/px68k <rom> <clover_args>
+-/bin/sharp <rom> <clover_args>
 
 Core by libretro
 Template by pcm/Compiled & Updated by KMFDManic
 Hakchi module system by madmonkey
 NES Mini shell integration by Cluster
-(c) 2016-2017
+(c) 2016-2018

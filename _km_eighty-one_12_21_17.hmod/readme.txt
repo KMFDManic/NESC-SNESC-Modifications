@@ -1,14 +1,14 @@
-=== Eighty-One core for RetroArch ===
+=== Eighty-One Core for RetroArch ===
 
-This module will add support for ZX81 to RetroArch
+Module adds support for ZX81
 
-Available executables and arguments:
-- /bin/zx81 <rom> <clover_args>
-  runs "eighty-one" core
+Available executables and arguments to run Core:
+- /bin/81 <rom> <clover_args>
+- /bin/eighty-one <rom> <clover_args>
 
 Core by libretro
 Template by pcm/Compiled & Updated by KMFDManic
 Hakchi module system by madmonkey
 NES Mini shell integration by Cluster
-(c) 2016-2017
+(c) 2016-2018
 

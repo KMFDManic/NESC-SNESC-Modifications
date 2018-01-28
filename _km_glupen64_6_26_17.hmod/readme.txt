@@ -1,15 +1,14 @@
-=== GLupeN64 core for RetroArch ===
+=== GLupeN64 Core for RetroArch ===
 
-This module will add support for Nintendo 64 games to RetroArch
+Module adds support for Nintendo 64
 
-Available executables and arguments:
-- /bin/n64 <rom> <clover_args>
-  runs "glupen64" core
+Available executables and arguments to run Core:
 - /bin/glupen <rom> <clover_args>
-  runs "glupen64" core
+- /bin/glupen64 <rom> <clover_args>
+- /bin/n64 <rom> <clover_args>
 
 Core by libretro
 Module by pcm/Updated by KMFDManic
 Hakchi module system by madmonkey
 NES Mini shell integration by Cluster
-(c) 2016-2017
+(c) 2016-2018

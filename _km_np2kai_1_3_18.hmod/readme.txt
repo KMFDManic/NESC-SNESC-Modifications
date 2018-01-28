@@ -1,15 +1,13 @@
-=== NP2kai core for RetroArch ===
+=== NP2kai Core for RetroArch ===
 
-This module will add support for NEC PC-98 games to RetroArch.
+Module adds support for NEC PC-98
 
-Available executables and arguments:
-- /bin/pc98 <rom> <clover_args>
-  runs "np2kai" core
+Available executables and arguments to run Core:
 - /bin/np2kai <rom> <clover_args>
-  runs "np2kai" core
+- /bin/pc98 <rom> <clover_args>
 
 Core by libretro
 Template by pcm/Compiled & Updated by KMFDManic
 Hakchi module system by madmonkey
 NES Mini shell integration by Cluster
-(c) 2016-2017
+(c) 2016-2018

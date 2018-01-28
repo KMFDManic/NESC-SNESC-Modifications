@@ -1,14 +1,14 @@
-=== MAME2014 core for RetroArch ===
+=== MAME2014 Core for RetroArch ===
 
-This module will add support for various arcade games to RetroArch
-The BIOS files must be inside the game directory or Via Bios Module where applicable
+Module adds support for MAME 2014
 
-Available executables and arguments:
+Bios must be inside game directory or via Bios Module where applicable
+
+Available executables and arguments to run Core:
 - /bin/mame2014 <rom> <clover_args>
-  runs "mame2014" core
 
 Core by libretro
 Template by pcm/Compiled & Updated by KMFDManic
 Hakchi module system by madmonkey
 NES Mini shell integration by Cluster
-(c) 2016-2017
+(c) 2016-2018

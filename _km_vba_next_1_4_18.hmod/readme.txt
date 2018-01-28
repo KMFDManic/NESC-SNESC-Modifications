@@ -4,7 +4,6 @@ Module adds support for Game Boy Advance
 
 Available executables and arguments to run Core:
 - /bin/vba-next <rom> <clover_args>
-  runs "vba next" core
 
 Core by libretro
 Template by pcm/Compiled & Updated by KMFDManic

@@ -15,8 +15,11 @@ It can also run games for other consoles. This pack already contains the followi
 - fceumm (NES, many mappers, UNIF support)
 - nestopia (NES, FDS)
 
-Available executables and arguments:
 
+Available executables and arguments to run Cores:
+
+- /bin/fceumm <core> <rom> <clover_args>
+- /bin/nestopia <core> <rom> <clover_args>
 - /bin/retroarch-clover <core> <rom> <clover_args>
   runs RetroArch with specified core,
   designed for executing from clover shell, 
@@ -27,10 +30,6 @@ Available executables and arguments:
   runs RetroArch directly, without clover integration
 - /bin/retroarch
   RetroArch binary
-- /bin/fceumm <core> <rom> <clover_args>
-  runs compressed games with fceumm core
-- /bin/nestopia <core> <rom> <clover_args>
-  runs compressed games with nestopia core
 
 Sometimes default emulator of NES/SNES mini is not working with some games when it should. So you can just add "--retroarch" command line argument to use RetroArch.
 

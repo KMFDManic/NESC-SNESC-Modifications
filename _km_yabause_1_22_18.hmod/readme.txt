@@ -3,6 +3,7 @@
 Module adds support for Sega Saturn
 
 Available executables and arguments to run Core:
+- /bin/saturn <rom> <clover_args>
 - /bin/yabause <rom> <clover_args>
 
 Core by libretro

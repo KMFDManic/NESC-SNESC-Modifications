@@ -1,4 +1,4 @@
-display_name = "Nintendo 64 (GLupeN64)"
+display_name = "Nintendo - Nintendo 64 (GLupeN64)"
 authors = "Gonetz|Mupen64Plus Team|Libretro"
 supported_extensions = "n64|v64|z64|bin|u1|ndd"
 corename = "GLupeN64"

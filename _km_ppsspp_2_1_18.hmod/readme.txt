@@ -3,7 +3,6 @@
 Module adds support for Playstation Portable
 
 Available executables and arguments to run Core:
-- /bin/psp <rom> <clover_args>
 - /bin/ppsspp <rom> <clover_args>
 
 Core by libretro

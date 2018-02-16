@@ -6,7 +6,7 @@ Available executables and arguments to run Core:
 - /bin/ppsspp <rom> <clover_args>
 
 Core by libretro
-Template by pcm/Compiled madmonkey
+Template by pcm/Compiled by madmonkey
 Tweaked & Updated by KMFDManic
 Hakchi module system by madmonkey
 NES Mini shell integration by Cluster

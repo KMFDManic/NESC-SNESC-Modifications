@@ -1,0 +1,35 @@
+#!/bin/sh
+source /etc/preinit
+script_init
+
+if [ -d "/media/hakchi/logs" ]; then
+  exec 1>>"/media/hakchi/logs/$(basename "$0").log" 2>&1
+fi
+
+echo "pkill -KILL clover-mcp" > "/var/exec.flag"
+DEPS="/etc/libretro/system/PPSSPP/deps"
+mountpoint -q "$DEPS" || mount -o loop,ro "$(ls $DEPS/* | head -n1)" "$DEPS"
+export LD_LIBRARY_PATH="$DEPS"
+echo "1" > "/proc/sys/vm/overcommit_memory"
+stopTask "clover-mcp"
+
+if ! [ -d "/var/cache/retroarch/PSP" ]; then
+  mkdir -p "/var/cache/retroarch"
+  if [ -d "/var/saves" ]; then
+    mkdir -p "/var/saves/PSP"
+    ln -s "/var/saves/PSP" "/var/cache/retroarch/PSP"
+  else
+    mkdir -p "/var/lib/clover/profiles/0/PSP"
+    ln -s "/var/lib/clover/profiles/0/PSP" "/var/cache/retroarch/PSP"
+  fi
+fi
+
+if [ -f "/bin/retroarch-clover-child" ]; then
+  retroarch-clover-child "$(basename "$0")" "$@"
+else
+  retroarch-clover "$(basename "$0")" "$@"
+fi
+
+exit_code=$?
+umount "$DEPS"
+exit $exit_code

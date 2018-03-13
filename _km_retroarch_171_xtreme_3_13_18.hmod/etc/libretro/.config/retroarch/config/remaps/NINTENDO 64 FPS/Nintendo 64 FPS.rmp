@@ -1,0 +1,6 @@
+input_player1_r = "12"
+input_player1_l2 = "11"
+input_libretro_device_p1 = "5"
+input_player1_analog_dpad_mode = "0"
+input_libretro_device_p2 = "5"
+input_player2_analog_dpad_mode = "1"

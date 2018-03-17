@@ -36,7 +36,7 @@ Compiled & Updated by:
 KMFDManic/madmonkey/pcm
 NEO Additions by:
 'TheOtherGuys'/CompCom/Swingflip/
-ViralDNA/& Also BsLeNuL
+ViralDNA
 NES Mini port by madmonkey
 NES Mini shell integration by Cluster
 Additional modules by pcm

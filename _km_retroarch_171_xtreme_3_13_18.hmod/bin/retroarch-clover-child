@@ -17,6 +17,7 @@ t_suffix=_time.txt
 demo_time=30
 debug=0
 logend="_RetroArch.log"
+bezel_mode=0
 shift 2
 
 while [ $# -gt 0 ]; do
@@ -31,9 +32,6 @@ while [ $# -gt 0 ]; do
   [ "$1" == "--video-mode" ] && [ "$2" == "crt-filter" ] && filter=crt720 && crt=1
   [ "$1" == "--video-mode" ] && [ "$2" == "keep-aspect-ratio" ] && filter=gpu720
   [ "$1" == "--video-mode" ] && [ "$2" == "pixel-perfect" ] && filter=ppu
-  [ "$1" == "--smooth43" ] && smooth43=1
-  [ "$1" == "--no-smooth" ] && no_smooth=1
-  [ "$1" == "--no-scanlines" ] && no_scanlines=1
   [ "$1" == "--bezel-mode" ] && bezel_mode=1
   [ "$1" == "--ra-extra" ] && extra=$2
   [ "$1" == "--ra-nosaves" ] && nosaves=1
@@ -43,13 +41,8 @@ while [ $# -gt 0 ]; do
   [ "$1" == "--decorative-frame-path" ] && frame=$2
   [ "$1" == "--debug-usb" ] && debug=1
   [ "$1" == "--debug-nand" ] && debug=2
-  [ "$1" == "--custom-loadscreen" ] && custom_loadscreen=$2
   shift
 done
-
-if [ ! -z "$custom_loadscreen" ]; then
-	decodepng "$rootfs/share/retroarch/assets/$custom_loadscreen" > /dev/fb0;
-fi
 
 [ -z "$timefile_save" ] && timefile_save=$load$t_suffix
 [ -z "$timefile_load" ] && timefile_load=$load$t_suffix
@@ -76,68 +69,69 @@ else
 fi
 
 #Refresh the framebuffer incase there is some left over FB process
-if [ ! -z "$custom_loadscreen" ]; then
-	decodepng "$rootfs/share/retroarch/assets/$custom_loadscreen" > /dev/fb0;
-else
-	decodepng "$rootfs/share/retroarch/assets/RAloading-min.png" > /dev/fb0;
-fi
+decodepng "$rootfs/share/retroarch/assets/RAloading-min.png" > /dev/fb0;
 
 # Check if its S/NES core
 s_nes=$(echo "$corename" | grep "nestopia\|fceumm\|snes")
 
-# Check if its a GB/GBC or GG game
-gb_gg=$(echo "$rom" | grep -ie "\.gb$\|\.gb\.\|\.gbc\|\.sgb\|\.dmg\|\.gg")
-
-# Check if its a GBA game
-gba=$(echo "$corename" | grep "gba\|vba\|gpsp")
-
 # Functions to make the rest easier
-smooth () { sed -i -e 's/video_smooth = "[^"]*"/video_smooth = "'$1'"/g' /etc/libretro/retroarch.cfg; }
-ratio () { sed -i -e 's/aspect_ratio_index = "[^"]*"/aspect_ratio_index = "'$1'"/g' /etc/libretro/retroarch.cfg; }
-overlay () { sed -i -e 's/input_overlay_enable = "[^"]*"/input_overlay_enable = "'$1'"/g' /etc/libretro/retroarch.cfg; }
-width () { sed -i -e 's/custom_viewport_width = "[^"]*"/custom_viewport_width = "'$1'"/g' /etc/libretro/retroarch.cfg; }
-height () { sed -i -e 's/custom_viewport_height = "[^"]*"/custom_viewport_height = "'$1'"/g' /etc/libretro/retroarch.cfg; }
-posx () { sed -i -e 's/custom_viewport_x = "[^"]*"/custom_viewport_x = "'$1'"/g' /etc/libretro/retroarch.cfg; }
-posy () { sed -i -e 's/custom_viewport_y = "[^"]*"/custom_viewport_y = "'$1'"/g' /etc/libretro/retroarch.cfg; }
+smooth () {
+sed -i -e 's/video_smooth = "[^"]*"/video_smooth = "'$1'"/g' /etc/libretro/retroarch.cfg
+}
+ratio () {
+sed -i -e 's/aspect_ratio_index = "[^"]*"/aspect_ratio_index = "'$1'"/g' /etc/libretro/retroarch.cfg
+}
+overlay () {
+sed -i -e 's/input_overlay_enable = "[^"]*"/input_overlay_enable = "'$1'"/g' /etc/libretro/retroarch.cfg
+}
+width () {
+sed -i -e 's/custom_viewport_width = "[^"]*"/custom_viewport_width = "'$1'"/g' /etc/libretro/retroarch.cfg
+}
+height () {
+sed -i -e 's/custom_viewport_height = "[^"]*"/custom_viewport_height = "'$1'"/g' /etc/libretro/retroarch.cfg
+}
+posx () {
+sed -i -e 's/custom_viewport_x = "[^"]*"/custom_viewport_x = "'$1'"/g' /etc/libretro/retroarch.cfg
+}
+posy () {
+sed -i -e 's/custom_viewport_y = "[^"]*"/custom_viewport_y = "'$1'"/g' /etc/libretro/retroarch.cfg
+}
 
-clovercon_file=/dev/clovercon1
-clv=$(echo $rom | grep -o 'CLV-[^\\/]*')
-
-# Hold L button while starting the game to enable --bezel-mode
-if [ -e "$clovercon_file" ] && [ "$(cat $clovercon_file)" == "0004" ] && [ -z "$bezel_mode" ]; then
-  sed -i -e 's/^\(Exec\).*$/& --bezel-mode/' /usr/share/games/$clv/$clv.desktop && bezel_mode=1
-fi
-# Hold R button while starting the game to disable --bezel-mode
-if [ -e "$clovercon_file" ] && [ "$(cat $clovercon_file)" == "0008" ]; then
-  sed -i 's/ --bezel-mode//g' /usr/share/games/$clv/$clv.desktop && bezel_mode=
-fi
-
-# If NES/SNES games or --bezel-mode it will fit the overlay, if not games will start without overlay in 4:3 (+ smooth and scanlines if CRT) or 1:1
-if [ ! -z "$s_nes" ] || [ ! -z "$bezel_mode" ]; then
-  [ "$filter" == "crt720" ] && smooth true && ratio 22 && overlay true && width 877 && height 672 && posx 201 && posy 24
-  [ "$filter" == "crt720" ] && [ ! -z "$no_smooth" ] && smooth false
-  [ "$filter" == "gpu720" ] && smooth false && ratio 22 && overlay true && width 877 && height 672 && posx 201 && posy 24
-  [ "$filter" == "gpu720" ] && [ ! -z "$smooth43" ] && smooth true
-  [ "$filter" == "ppu" ] && smooth false && ratio 22 && overlay true && width 768 && height 672 && posx 256 && posy 24
+# If S/NES games or --bezel-mode it will fit the overlay, if not games will start without overlay in 4:3 (+ smooth and scanlines if CRT) or 1:1
+if [ ! -z "$s_nes" ] || [ "$bezel_mode" == "1" ]; then
+  if [ "$filter" == "crt720" ]; then
+    smooth true && ratio 22 && overlay true && width 877 && height 672 && posx 201 && posy 24
+  fi
+  if [ "$filter" == "gpu720" ]; then
+    smooth false && ratio 22 && overlay true && width 877 && height 672 && posx 201 && posy 24
+  fi
+  if [ "$filter" == "ppu" ]; then
+    smooth false && ratio 22 && overlay true && width 768 && height 672 && posx 256 && posy 24
+  fi
 else
-  [ "$filter" == "crt720" ] && smooth true && ratio 0 && overlay true
-  [ "$filter" == "crt720" ] && [ ! -z "$no_smooth" ] && smooth false
-  [ "$filter" == "crt720" ] && [ ! -z "$no_scanlines" ] && overlay false
-  [ "$filter" == "gpu720" ] && smooth false && ratio 0 && overlay false
-  [ "$filter" == "gpu720" ] && [ ! -z "$smooth43" ] && smooth true
-  [ "$filter" == "ppu" ] && smooth false && ratio 20 && overlay false
-  [ ! -z "$gb_gg" ] && ratio 22 && width 640 && height 576
-  [ ! -z "$gba" ] && ratio 22 && width 720 && height 480
+  if [ "$filter" == "crt720" ]; then
+    smooth true && ratio 0 && overlay true
+  fi
+  if [ "$filter" == "gpu720" ]; then
+    smooth false && ratio 0 && overlay false
+  fi
+  if [ "$filter" == "ppu" ]; then
+    smooth false && ratio 20 && overlay false
+  fi
 fi
 
-# Border and scanlines
-[ "$filter" == "crt720" ] && [ ! -z "$s_nes" -o ! -z "$bezel_mode" ] && overlay1=scanlines.png && overlay2=$frame.png
-[ "$filter" == "crt720" ] && [ -z "$s_nes" -a -z "$bezel_mode" ] && overlay1=scanlines.png && overlay2=
-[ "$filter" == "crt720" ] && [ ! -z "$no_scanlines" ] || [ ! "$filter" == "crt720" ] && overlay1=$frame.png && overlay2=
+# Using scanlines or not
+if [ "$filter" == "crt720" ]; then
+  overlay1=scanlines.png
+fi
+if [ "$sftype" == "nes" ] && [ ! "$filter" == "crt720" ]; then
+  overlay1=
+fi
+if [ "$sftype" == "snes" ] && [ ! "$filter" == "crt720" ]; then
+  overlay1=$frame.png
+fi
 overlay1=$(echo "$overlay1" | sed 's/\//\\\//g')
-overlay2=$(echo "$overlay2" | sed 's/\//\\\//g')
 sed -i -e 's/overlay0_overlay = "[^"]*"/overlay0_overlay = "'$overlay1'"/g' /etc/libretro/.config/retroarch/overlay/default.cfg
-sed -i -e 's/overlay0_desc0_overlay = "[^"]*"/overlay0_desc0_overlay = "'$overlay2'"/g' /etc/libretro/.config/retroarch/overlay/default.cfg
 
 # Start timestamp
 ts=$(date +"%s")

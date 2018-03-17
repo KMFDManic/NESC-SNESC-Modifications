@@ -1,0 +1,202 @@
+#!/bin/sh
+
+source /etc/preinit
+script_init
+
+HOME=/etc/libretro
+corename=$1
+core=$HOME/core/$1_libretro.so
+rom=$2
+filename=$(basename "$rom")
+id=${filename%.*}
+extension="${filename##*.}"
+autosave="/var/cache/retroarch/$id.state.auto"
+rsram="/var/cache/retroarch/$id.srm"
+rsav="/var/cache/retroarch/$id.sav"
+t_suffix=_time.txt
+demo_time=30
+debug=0
+logend="_RetroArch.log"
+shift 2
+
+while [ $# -gt 0 ]; do
+  [ "$1" == "--load-state-file" ] && load=$2
+  [ "$1" == "--save-on-quit" ] && save=$2
+  [ "$1" == "--rollback-input-dir" ] && load=$2/savestate
+  [ "$1" == "--rollback-output-dir" ] && save=$2/savestate
+  [ "$1" == "--save-screenshot-on-quit" ] && screenshot=$2
+  [ "$1" == "--save-data-backing-file" ] && sram=$2
+  [ "$1" == "--graphic-filter" ] && filter=$2
+  [ "$1" == "--enable-crt-scanlines" ] && crt=1
+  [ "$1" == "--video-mode" ] && [ "$2" == "crt-filter" ] && filter=crt720 && crt=1
+  [ "$1" == "--video-mode" ] && [ "$2" == "keep-aspect-ratio" ] && filter=gpu720
+  [ "$1" == "--video-mode" ] && [ "$2" == "pixel-perfect" ] && filter=ppu
+  [ "$1" == "--smooth43" ] && smooth43=1
+  [ "$1" == "--no-smooth" ] && no_smooth=1
+  [ "$1" == "--no-scanlines" ] && no_scanlines=1
+  [ "$1" == "--bezel-mode" ] && bezel_mode=1
+  [ "$1" == "--ra-extra" ] && extra=$2
+  [ "$1" == "--ra-nosaves" ] && nosaves=1
+  [ "$1" == "--load-time-path" ] && timefile_load=$2
+  [ "$1" == "--save-time-path" ] && timefile_save=$2
+  [ "$1" == "--replay-inputs" ] && demo=1
+  [ "$1" == "--decorative-frame-path" ] && frame=$2
+  [ "$1" == "--debug-usb" ] && debug=1
+  [ "$1" == "--debug-nand" ] && debug=2
+  [ "$1" == "--custom-loadscreen" ] && custom_loadscreen=$2
+  shift
+done
+
+if [ ! -z "$custom_loadscreen" ]; then
+	decodepng "$rootfs/share/retroarch/assets/$custom_loadscreen" > /dev/fb0;
+fi
+
+[ -z "$timefile_save" ] && timefile_save=$load$t_suffix
+[ -z "$timefile_load" ] && timefile_load=$load$t_suffix
+
+[ ! -z "$demo" ] && load=$(dirname $load)/savestate
+
+# Create cache folder
+mkdir -p /var/cache/retroarch/
+
+# saves if any
+if [ ! -z "$load" ] && [ -f "$load" ] && [ -z "$nosaves" ]; then
+  if [ $(hexdump -n 2 -e '1/1 "%02X"' "$load") == "1F8B" ]; then
+    cp -f "$load" "$autosave.gz"
+    gunzip -f "$autosave.gz"
+  else
+    cp -f "$load" "$autosave"
+  fi
+fi
+# Nestopia names FDS saves as $id.sav, so here's a quick fix
+if [ "$corename" == "nestopia" ] && [ "$extension" == "fds" ]; then
+  [ ! -z "$sram" ] && [ -f "$sram" ] && cp -f "$sram" "$rsav"
+else
+  [ ! -z "$sram" ] && [ -f "$sram" ] && cp -f "$sram" "$rsram"
+fi
+
+#Refresh the framebuffer incase there is some left over FB process
+if [ ! -z "$custom_loadscreen" ]; then
+	decodepng "$rootfs/share/retroarch/assets/$custom_loadscreen" > /dev/fb0;
+else
+	decodepng "$rootfs/share/retroarch/assets/RAloading-min.png" > /dev/fb0;
+fi
+
+# Check if its S/NES core
+s_nes=$(echo "$corename" | grep "nestopia\|fceumm\|snes")
+
+# Check if its a GB/GBC or GG game
+gb_gg=$(echo "$rom" | grep -ie "\.gb$\|\.gb\.\|\.gbc\|\.sgb\|\.dmg\|\.gg")
+
+# Check if its a GBA game
+gba=$(echo "$corename" | grep "gba\|vba\|gpsp")
+
+# Functions to make the rest easier
+smooth () { sed -i -e 's/video_smooth = "[^"]*"/video_smooth = "'$1'"/g' /etc/libretro/retroarch.cfg; }
+ratio () { sed -i -e 's/aspect_ratio_index = "[^"]*"/aspect_ratio_index = "'$1'"/g' /etc/libretro/retroarch.cfg; }
+overlay () { sed -i -e 's/input_overlay_enable = "[^"]*"/input_overlay_enable = "'$1'"/g' /etc/libretro/retroarch.cfg; }
+width () { sed -i -e 's/custom_viewport_width = "[^"]*"/custom_viewport_width = "'$1'"/g' /etc/libretro/retroarch.cfg; }
+height () { sed -i -e 's/custom_viewport_height = "[^"]*"/custom_viewport_height = "'$1'"/g' /etc/libretro/retroarch.cfg; }
+posx () { sed -i -e 's/custom_viewport_x = "[^"]*"/custom_viewport_x = "'$1'"/g' /etc/libretro/retroarch.cfg; }
+posy () { sed -i -e 's/custom_viewport_y = "[^"]*"/custom_viewport_y = "'$1'"/g' /etc/libretro/retroarch.cfg; }
+
+clovercon_file=/dev/clovercon1
+clv=$(echo $rom | grep -o 'CLV-[^\\/]*')
+
+# Hold L button while starting the game to enable --bezel-mode
+if [ -e "$clovercon_file" ] && [ "$(cat $clovercon_file)" == "0004" ] && [ -z "$bezel_mode" ]; then
+  sed -i -e 's/^\(Exec\).*$/& --bezel-mode/' /usr/share/games/$clv/$clv.desktop && bezel_mode=1
+fi
+# Hold R button while starting the game to disable --bezel-mode
+if [ -e "$clovercon_file" ] && [ "$(cat $clovercon_file)" == "0008" ]; then
+  sed -i 's/ --bezel-mode//g' /usr/share/games/$clv/$clv.desktop && bezel_mode=
+fi
+
+# If NES/SNES games or --bezel-mode it will fit the overlay, if not games will start without overlay in 4:3 (+ smooth and scanlines if CRT) or 1:1
+if [ ! -z "$s_nes" ] || [ ! -z "$bezel_mode" ]; then
+  [ "$filter" == "crt720" ] && smooth true && ratio 22 && overlay true && width 877 && height 672 && posx 201 && posy 24
+  [ "$filter" == "crt720" ] && [ ! -z "$no_smooth" ] && smooth false
+  [ "$filter" == "gpu720" ] && smooth false && ratio 22 && overlay true && width 877 && height 672 && posx 201 && posy 24
+  [ "$filter" == "gpu720" ] && [ ! -z "$smooth43" ] && smooth true
+  [ "$filter" == "ppu" ] && smooth false && ratio 22 && overlay true && width 768 && height 672 && posx 256 && posy 24
+else
+  [ "$filter" == "crt720" ] && smooth true && ratio 0 && overlay true
+  [ "$filter" == "crt720" ] && [ ! -z "$no_smooth" ] && smooth false
+  [ "$filter" == "crt720" ] && [ ! -z "$no_scanlines" ] && overlay false
+  [ "$filter" == "gpu720" ] && smooth false && ratio 0 && overlay false
+  [ "$filter" == "gpu720" ] && [ ! -z "$smooth43" ] && smooth true
+  [ "$filter" == "ppu" ] && smooth false && ratio 20 && overlay false
+  [ ! -z "$gb_gg" ] && ratio 22 && width 640 && height 576
+  [ ! -z "$gba" ] && ratio 22 && width 720 && height 480
+fi
+
+# Border and scanlines
+[ "$filter" == "crt720" ] && [ ! -z "$s_nes" -o ! -z "$bezel_mode" ] && overlay1=scanlines.png && overlay2=$frame.png
+[ "$filter" == "crt720" ] && [ -z "$s_nes" -a -z "$bezel_mode" ] && overlay1=scanlines.png && overlay2=
+[ "$filter" == "crt720" ] && [ ! -z "$no_scanlines" ] || [ ! "$filter" == "crt720" ] && overlay1=$frame.png && overlay2=
+overlay1=$(echo "$overlay1" | sed 's/\//\\\//g')
+overlay2=$(echo "$overlay2" | sed 's/\//\\\//g')
+sed -i -e 's/overlay0_overlay = "[^"]*"/overlay0_overlay = "'$overlay1'"/g' /etc/libretro/.config/retroarch/overlay/default.cfg
+sed -i -e 's/overlay0_desc0_overlay = "[^"]*"/overlay0_desc0_overlay = "'$overlay2'"/g' /etc/libretro/.config/retroarch/overlay/default.cfg
+
+# Start timestamp
+ts=$(date +"%s")
+tm=0
+[ -f "$timefile_load" ] && tm=$(cat "$timefile_load")
+
+# Clear Caches/Buffers
+sync
+echo 3 > /proc/sys/vm/drop_caches
+
+if [ "$debug" == "0" ]; then #Default
+  retroarch -c "$HOME/retroarch.cfg" -vfL "$core" "$rom" $extra &
+fi 
+if [ "$debug" == "1" ]; then #Verbose USB mode
+  retroarch -c "$HOME/retroarch.cfg" -vfL "$core" "$rom" $extra > /media/"$filename"_RetroArch.log 2>&1 &
+fi 
+if [ "$debug" == "2" ]; then #Verbose NAND mode
+  retroarch -c "$HOME/retroarch.cfg" -vfL "$core" "$rom" $extra > /tmp/"$filename"_RetroArch.log 2>&1 &
+fi 
+rpid=$!
+
+[ ! -z "$save" ] && mkdir -p $(dirname "$save")
+[ ! -z "$sram" ] && mkdir -p $(dirname "$sram")
+[ ! -z "$screenshot" ] && mkdir -p $(dirname "$screenshot")
+
+# Set Watchdog Arguments
+watchdog_args="$rpid"
+
+# Demo mode enabled
+if [ ! -z "$demo" ]; then
+  watchdog_args="$watchdog_args --demo"
+fi
+# Set Screenshot Args
+if [ ! -z "$screenshot" ] && [ -z "$nosaves" ]; then
+  watchdog_args="$watchdog_args --screenshot "$screenshot""
+fi
+
+# Run retroarch watchdog
+retroarch_watchdog $watchdog_args
+
+# Saves!
+[ ! -z "$save" ] && [ -f "$autosave" ] && [ -z "$nosaves" ] && gzip -f "$autosave" && mv -f "$autosave.gz" "$save"
+if [ "$corename" == "nestopia" ] && [ "$extension" == "fds" ]; then
+  [ ! -z "$sram" ] && [ -f "$rsav" ] && mv -f "$rsav" "$sram"
+else
+  [ ! -z "$sram" ] && [ -f "$rsram" ] && mv -f "$rsram" "$sram"
+fi
+
+# Time
+ts2=$(date +"%s")
+tm=$((tm + ts2 - ts))
+echo $tm > "$timefile_save"
+
+# Remove cache folder
+rm -rf /var/cache/retroarch/
+
+# Clear Caches/Buffers
+sync
+echo 3 > /proc/sys/vm/drop_caches
+
+# Back to the shell
+/etc/init.d/S81clover-mcp start

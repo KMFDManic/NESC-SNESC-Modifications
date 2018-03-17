@@ -16,7 +16,7 @@ Template by pcm
 Compiled & Updated by gpstar/KMFDManic
 Final Fight CD Support commits by:
 gpstar & big blue frontend
-libretro commits by arcadez/twinaphex
+libretro commits by arcadez/twinaphex/gamez-fan
 Personal thanks to asper
 Hakchi module system by madmonkey
 NES Mini shell integration by Cluster

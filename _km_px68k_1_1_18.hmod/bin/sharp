@@ -1,2 +1,0 @@
-#!/bin/sh
-exec retroarch-clover px68k "$@"

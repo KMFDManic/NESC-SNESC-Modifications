@@ -1,0 +1,18 @@
+#!/bin/sh
+
+source /etc/preinit
+script_init
+
+export HOME=/etc/libretro
+
+decodepng "$rootfs/share/retroarch/assets/RAloading-min.png" > /dev/fb0;
+
+mkdir -p /var/cache/retroarch/
+
+if [ "$1" == "null" ]; then
+  exec retroarch -c "$HOME/retroarch.cfg" -vf
+else
+  core=$HOME/core/$1_libretro.so
+  shift
+  exec retroarch -c "$HOME/retroarch.cfg" -vfL "$core" ${1+"$@"}
+fi

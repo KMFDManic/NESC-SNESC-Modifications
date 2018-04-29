@@ -1,0 +1,10 @@
+#!/bin/sh
+core=km_fceumm
+filename="$1"
+extension="${filename##*.}"
+
+if [ "$extension" == "fds" ] || [ "$extension" == "qd" ]; then
+  core=km_nestopia
+fi
+
+exec retroarch-clover "$core" "$filename" "$@"

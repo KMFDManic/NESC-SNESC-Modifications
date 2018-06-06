@@ -1,5 +1,5 @@
 -----------------------
-Name: km_RetroArch 173 Standard NetPLAY Edition (6-5-18)
+Name: km_RetroArch 173 Standard NetPLAY Edition (6-6-18)
 Creator: KMFDManic/madmonkey/BsLeNuL
 Category: KMFDManic Experimental Core Set
 -----------------------

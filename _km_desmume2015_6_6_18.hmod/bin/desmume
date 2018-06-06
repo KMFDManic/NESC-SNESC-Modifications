@@ -1,0 +1,2 @@
+#!/bin/sh
+exec desmume2015 ${1+"$@"}

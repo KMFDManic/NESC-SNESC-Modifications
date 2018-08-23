@@ -1,9 +1,0 @@
-transfer_default
-chmod +x $rootfs/bin/*
-chmod +x $rootfs/usr/bin/*
-mkdir -p $rootfs/etc/libretro/system
-[ -f "/newroot/usr/share/kachikachi/fds_bios.bin" ] && cp -f /newroot/usr/share/kachikachi/fds_bios.bin $rootfs/etc/libretro/system/disksys.rom
-mkdir -p $rootfs/etc/options_menu/retroarch/default_files
-copy $rootfs/etc/libretro/retroarch.cfg $rootfs/etc/options_menu/retroarch/default_files/
-copy $rootfs/etc/libretro/retroarch-core-options.cfg $rootfs/etc/options_menu/retroarch/default_files/
-return 1

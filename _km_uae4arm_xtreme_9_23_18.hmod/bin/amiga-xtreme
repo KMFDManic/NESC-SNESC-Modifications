@@ -1,0 +1,2 @@
+#!/bin/sh
+exec retroarch-clover km_uae4arm_xtreme "$@"

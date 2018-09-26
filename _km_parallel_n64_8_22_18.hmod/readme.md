@@ -1,5 +1,6 @@
 -----------------------
-Name: km_ParaLLEl N64 (8-22-18)
+Name: km_ParaLLEl N64
+Version: 9-23-18
 Creator: KMFDManic/madmonkey
 Category: KMFDManic Experimental Core Set
 Emulated System: Nintendo 64

@@ -7,9 +7,9 @@ Emulated System: Sharp X68000
 -----------------------
 === Core by libretro ===
 
-Available executables and arguments to run Core:
--/bin/px68k <rom> <clover_args>
--/bin/sharp <rom> <clover_args>
+Available executables and arguments to run Core:  
+- /bin/px68k <rom> <clover_args>  
+- /bin/sharp <rom> <clover_args>
 
 Hakchi module system by madmonkey
 

@@ -1,19 +1,22 @@
 -----------------------
 Name: km_SNES9x2016 Bright
-Version: 10-7-18
-Creator: KMFDManic/madmonkey/kps501/gpstar
+Version: 11-5-18
+Creator: KMFDManic/madmonkey/kps501/gpstar/byuu
 Category: KMFDManic Experimental Core Set
 Emulated System: Super Nintendo/Super Famicom/Nintendo Satellaview/Sufami Turbo
 -----------------------
-=== Core by libretro ===
+=== Core by libretro (Unofficial) ===
 
 This particular SNES9x2016 Bright Variant offers some incredible features, only seen before
-in Higan/BSNES, as well as some nifty, entirely new, never seen before additions!  These are
-all listed below!  It is a true sandbox experience to test out potentially new and upcoming
-mainline additions to Standard SNES9x2016!  
+in Higan/BSNES/Standalone PC SNES9x, as well as some nifty, entirely new, never seen before 
+additions!  Due to the extreme accuracy of BSNES, which unfortunately runs 5-11 FPS for Mini 
+Users, the PC SNES9x (licensed) special chip codings had to be implemented, instead.  This is 
+an unofficial libretro Core, as a result of the need to avoid potentially breaking anything 
+Mainline Wise! These additions are all listed below!  It is a true sandbox experience!  
 
 Available executables and arguments to run Core:
 - /bin/snes <rom> <clover_args>
+- /bin/snes9x-bright <rom> <clover_args>
 - /bin/snes-bright <rom> <clover_args>
 
 libretro commits by: kps501

@@ -1,9 +1,9 @@
 -----------------------
 Name: km_PicoDrive
-Version: 10-7-18
+Version: 11-5-18
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
-Emulated System: Sega Genesis/Mega Drive/CD/Master System/32X
+Emulated System: Sega Genesis/Mega Drive/CD/Master System/Game Gear/32X
 -----------------------
 === Core by libretro ===
 

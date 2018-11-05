@@ -1,6 +1,6 @@
 -----------------------
 Name: km_ChaiLove
-Version: 10-7-18
+Version: 11-5-18
 Creator: KMFDManic/madmonkey
 Category: KMFDManic Experimental Core Set
 Emulated System: ChaiLove

@@ -1,6 +1,6 @@
 -----------------------
 Name: km_SNES9x2016 Bright
-Version: 11-5-18
+Version: 12-17-18
 Creator: KMFDManic/madmonkey/kps501/gpstar/byuu
 Category: KMFDManic Experimental Core Set
 Emulated System: Super Nintendo/Super Famicom/Nintendo Satellaview/Sufami Turbo

@@ -1,9 +1,9 @@
 -----------------------
-Name: km_MrBoom
-Version: 10-7-18
-Creator: KMFDManic
+Name: km_Mr.Boom
+Version: 12-17-18
+Creator: KMFDManic/frranck
 Category: KMFDManic Experimental Core Set
-Emulated System: MrBoom Dynablaster clone
+Emulated System: Mr.Boom Dynablaster Clone
 -----------------------
 === Core by libretro ===
 

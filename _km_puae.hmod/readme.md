@@ -1,6 +1,6 @@
 -----------------------
 Name: km_P-UAE
-Version: 10-7-18
+Version: 12-17-18
 Creator: KMFDManic/madmonkey/qclart/∆ + 0 / 9
 Category: KMFDManic Experimental Core Set
 Emulated System: Commodore Amiga

@@ -1,6 +1,6 @@
 -----------------------
 Name: km_NX Engine
-Version: 10-7-18
+Version: 12-17-18
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: Cave Story

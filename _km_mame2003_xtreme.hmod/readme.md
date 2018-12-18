@@ -1,6 +1,6 @@
 -----------------------
 Name: km_MAME 2003 Xtreme
-Version: 10-7-18
+Version: 12-17-18
 Creator: KMFDManic/gpstar/madmonkey
 Category: KMFDManic Experimental Core Set
 Emulated System: MAME 2003
@@ -15,8 +15,7 @@ and Double Dragon OST Support!!!
 Available executables and arguments to run Core:
 - /bin/mame2003 <rom> <clover_args>
 
-Final Fight, Mortal Kombat, NBA Jam, Out Run, Michael Jackson's Moonwalker, Double Dragon Custom OST commits by: Support commits by:
-gpstar
+Final Fight, Mortal Kombat, NBA Jam, Out Run, Michael Jackson's Moonwalker, Double Dragon Custom OST Support commits by: gpstar
 
 libretro commits by arcadez/twinaphex/gamez-fan/arcadez/wilstorm/dankcushions/hunterk/markwkidd/grant2258/zappautopia/etc
 

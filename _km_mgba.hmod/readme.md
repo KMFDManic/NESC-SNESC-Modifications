@@ -1,6 +1,6 @@
 -----------------------
 Name: km_mGBA
-Version: 11-5-18
+Version: 12-17-18
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: Game Boy Advance/Game Boy Color/Game Boy

@@ -1,9 +1,9 @@
 -----------------------
 Name: km_REminiscence
-Version: 10-7-18
+Version: 12-3-18
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
-Emulated System: REminiscence Flashback port
+Emulated System: REminiscence Flashback Port
 -----------------------
 === Core by libretro ===
 

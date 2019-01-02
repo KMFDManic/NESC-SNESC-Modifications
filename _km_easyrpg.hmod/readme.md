@@ -1,6 +1,6 @@
 -----------------------
 Name: km_EasyRPG
-Version: 12-17-18
+Version: 1-1-19
 Creator: KMFDManic/Ghabry
 Category: KMFDManic Experimental Core Set
 Emulated System: RPG Maker 2000/2003

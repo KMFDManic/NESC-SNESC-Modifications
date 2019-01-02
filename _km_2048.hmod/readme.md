@@ -1,6 +1,6 @@
 -----------------------
 Name: km_2048
-Version: 12-17-18
+Version: 1-1-18
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: 2048

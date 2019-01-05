@@ -1,6 +1,6 @@
 -----------------------
 Name: km_Pokemon Mini
-Version: 10-7-18
+Version: 1-5-19
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: Pokemon Mini

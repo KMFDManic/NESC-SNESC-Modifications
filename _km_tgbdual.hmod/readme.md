@@ -1,6 +1,6 @@
 -----------------------
 Name: km_TGB Dual
-Version: 10-7-18
+Version: 1-5-19
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: Game Boy/Game Boy Color

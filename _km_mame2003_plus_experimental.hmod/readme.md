@@ -1,6 +1,6 @@
 -----------------------
 Name: km_MAME 2003 Plus Experimental
-Version: 12-17-18
+Version: 1-5-19
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: MAME 2003

@@ -1,6 +1,6 @@
 -----------------------
 Name: km_FreeINTV
-Version: 10-7-18
+Version: 1-5-19
 Creator: KMFDManic/madmonkey
 Category: KMFDManic Experimental Core Set
 Emulated System: Mattel Intellivision

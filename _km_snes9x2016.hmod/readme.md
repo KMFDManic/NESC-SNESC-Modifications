@@ -1,6 +1,6 @@
 -----------------------
 Name: km_SNES9x2016
-Version: 1-1-19
+Version: 1-5-19
 Creator: KMFDManic/madmonkey
 Category: KMFDManic Experimental Core Set
 Emulated System: Super Nintendo/Super Famicom

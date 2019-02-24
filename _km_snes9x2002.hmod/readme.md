@@ -1,6 +1,6 @@
 -----------------------
 Name: km_SNES9x2002
-Version: 1-5-19
+Version: 2-18-19
 Creator: KMFDManic/madmonkey/pcm
 Category: KMFDManic Experimental Core Set
 Emulated System: Super Nintendo/Super Famicom

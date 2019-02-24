@@ -1,6 +1,6 @@
 -----------------------
 Name: km_Mednafen WonderSwan
-Version: 10-7-18
+Version: 2-18-19
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: WonderSwan/WonderSwan Color

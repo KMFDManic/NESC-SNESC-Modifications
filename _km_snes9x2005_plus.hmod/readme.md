@@ -1,6 +1,6 @@
 -----------------------
 Name: km_SNES9x2005 Plus
-Version: 1-5-19
+Version: 2-18-19
 Creator: KMFDManic/madmonkey
 Category: KMFDManic Experimental Core Set
 Emulated System: Super Nintendo/Super Famicom

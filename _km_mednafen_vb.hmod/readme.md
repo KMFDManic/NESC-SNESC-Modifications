@@ -1,6 +1,6 @@
 -----------------------
 Name: km_Mednafen Virtual Boy
-Version: 1-5-19
+Version: 2-18-19
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: Nintendo Virtual Boy

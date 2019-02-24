@@ -1,6 +1,6 @@
 -----------------------
 Name: km_MAME 2003 Xtreme
-Version: 12-17-18
+Version: 2-18-19
 Creator: KMFDManic/gpstar/madmonkey
 Category: KMFDManic Experimental Core Set
 Emulated System: MAME 2003

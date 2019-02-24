@@ -1,6 +1,6 @@
 -----------------------
 Name: km_Dinothawr
-Version: 1-5-19
+Version: 2-18-19
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: Dinothawr

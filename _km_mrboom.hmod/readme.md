@@ -1,6 +1,6 @@
 -----------------------
 Name: km_Mr.Boom
-Version: 1-5-19
+Version: 2-18-19
 Creator: KMFDManic/frranck
 Category: KMFDManic Experimental Core Set
 Emulated System: Mr.Boom Dynablaster Clone

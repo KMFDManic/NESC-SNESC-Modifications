@@ -1,6 +1,6 @@
 -----------------------
 Name: km_MAME 2000
-Version: 1-5-19
+Version: 2-18-19
 Creator: KMFDManic/gpstar
 Category: KMFDManic Experimental Core Set
 Emulated System: MAME 2000

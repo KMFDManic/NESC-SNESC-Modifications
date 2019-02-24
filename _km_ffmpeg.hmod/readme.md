@@ -1,7 +1,7 @@
 -----------------------
 Name: km_FFmpeg
 Creator: KMFDManic/madmonkey
-Version: 10-7-18
+Version: 2-18-19
 Category: KMFDManic Experimental Core Set
 Emulated System: FFmpeg Video Support
 -----------------------

@@ -1,6 +1,6 @@
 -----------------------
 Name: km_Hatari
-Version: 12-17-18
+Version: 2-18-19
 Creator: KMFDManic/madmonkey
 Category: KMFDManic Experimental Core Set
 Emulated System: Atari ST

@@ -1,6 +1,6 @@
 -----------------------
 Name: km_PPSSPP Xtreme
-Version: 10-7-18
+Version: 2-18-19
 Creator: KMFDManic/madmonkey
 Category: KMFDManic Experimental Core Set
 Emulated System: Sony Playstation Portable
@@ -8,7 +8,30 @@ Emulated System: Sony Playstation Portable
 === Core by libretro ===
 
 Available executables and arguments to run Core:
-- /bin/ppsspp <rom> <clover_args>
+- /bin/ppsspp <rom> <clover_args> (triggers PPSSPP Xtreme Mode Activate! - Requires RetroArch 1.7.5+!)
+- /bin/ppsspp-standard <rom> <clover_args> (triggers PPSSPP Standard Mode Activate! - Works with RetroArch 1.7.4-1.7.5+!)
+
+**Special Notes:**
+
+Above Command Lines are for when you have both installed simultaneously.  If you just have PPSSPP Xtreme installed, you
+will only need to use /bin/ppsspp  If Standard, then /bin/ppsspp-standard  For most users, PPSSPP Xtreme will be all one 
+ever needs.  But, there are a select few special circumstances where having dual usage of PPSSPP Xtreme and Standard 
+allows more finesse with some stubborn games!  
+
+Xtreme Mode has higher compatibility and better accuracy.  But, some games that are stubborn, work better with Standard Mode!
+
+In Xtreme Mode, defaults are absolutely required to be auto frame skip OFF, and at 0, ONLY.  The ONLY thing you can safely
+change is frame skip between 0-1.  Otherwise, you may encounter flickering or black screen for games!  To exit games, simply
+exit like any other Core, with RetroArch Exit or Controller Shortcut.  It may take up several seconds to exit, so be patient!
+Xtreme Mode also allows _DUMMY Folder Method without first running from Main UI!
+
+In Standard Mode, you can have auto frame skip on or off, and use frame skip anywhere from 0-9!  You will need to make
+absolute sure you set auto frame skip back to OFF, and frame skip to 0, before utilizing Xtreme Mode again!  Or, you
+will encounter graphical glitches.  To exit games, you can Load 2048 or Mr.Boom Cores, Start either/or, then exit safely!
+You are required to run the initial game from Main UI when using Standard Mode!
+
+It is not, at all, recommended to shut down your Mini, after exiting a PSP game.  It uses quite a bit of memory, and you 
+will have high probability of running into a C8 error.  Load up any other game, THEN shutdown to minimize chance of C8.
 
 NOTE: PPSSPP uses 256+ MB memory, so only load 1 game at a time! 
 Exit back to the main UI before attempting to load another.  Otherwise, you 

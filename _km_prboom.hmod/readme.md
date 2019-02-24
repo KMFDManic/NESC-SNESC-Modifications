@@ -1,6 +1,6 @@
 -----------------------
 Name: km_PrBoom
-Version: 10-7-18
+Version: 2-18-19
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: Doom Games
@@ -10,6 +10,8 @@ Emulated System: Doom Games
 The following image is required for this Core to work 
 properly:  prboom.wad  Copy it into pertaining Game
 Directory after adding via Hakchi
+
+Supported Games include Doom, Doom II, Final Doom and some other Doom IWAD mods
 
 Available executables and arguments to run Core:
 - /bin/wad <rom> <clover_args>

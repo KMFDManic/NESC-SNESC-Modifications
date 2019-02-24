@@ -1,6 +1,6 @@
 -----------------------
 Name: km_NeoCD 2018
-Version: 1-5-19
+Version: 2-18-19
 Creator: KMFDManic/madmonkey/bslenul/Fabrice Martinez
 Category: KMFDManic Experimental Core Set
 Emulated System: Neo Geo CD

@@ -1,6 +1,6 @@
 -----------------------
 Name: km_Genesis Plus GX
-Version: 2-18-19
+Version: 2-28-19
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: Sega Genesis/Mega Drive/CD/Master System/Game Gear/SG-1000

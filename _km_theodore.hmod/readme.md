@@ -1,6 +1,6 @@
 -----------------------
 Name: km_Theodore
-Version: 2-18-19
+Version: 2-28-19
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: Thomson TO8D

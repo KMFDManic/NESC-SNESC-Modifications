@@ -1,6 +1,6 @@
 -----------------------
 Name: km_SameBoy
-Version: 2-18-19
+Version: 3-9-19
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: Game Boy/Game Boy Color

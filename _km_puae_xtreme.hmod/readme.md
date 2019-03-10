@@ -1,6 +1,6 @@
 -----------------------
 Name: km_P-UAE Xtreme
-Version: 2-18-19
+Version: 3-9-19
 Creator: KMFDManic/madmonkey/qclart/∆ + 0 / 9
 Category: KMFDManic Experimental Core Set
 Emulated System: Commodore Amiga

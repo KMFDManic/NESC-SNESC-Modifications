@@ -1,6 +1,6 @@
 -----------------------
 Name: km_VBA-M
-Version: 3-9-19
+Version: 3-16-19
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: Game Boy Advance

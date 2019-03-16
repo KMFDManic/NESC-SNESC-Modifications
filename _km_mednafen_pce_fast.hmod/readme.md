@@ -1,6 +1,6 @@
 -----------------------
 Name: km_Mednafen PCE Fast
-Version: 2-18-19
+Version: 3-16-19
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: Turbografx-16/Turbografx-CD

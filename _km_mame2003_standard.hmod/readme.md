@@ -1,6 +1,6 @@
 -----------------------
 Name: km_MAME 2003 Standard
-Version: 3-9-19
+Version: 3-16-19
 Creator: KMFDManic/gpstar/madmonkey
 Category: KMFDManic Experimental Core Set
 Emulated System: MAME 2003

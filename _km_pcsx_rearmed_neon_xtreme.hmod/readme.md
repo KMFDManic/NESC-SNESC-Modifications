@@ -1,6 +1,6 @@
 -----------------------
 Name: km_PCSX ReARMed Neon Xtreme
-Version: 3-16-19
+Version: 4-1-19
 Creator: KMFDManic/madmonkey
 Category: KMFDManic Experimental Core Set
 Emulated System: Sony Playstation 

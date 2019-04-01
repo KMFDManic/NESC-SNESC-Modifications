@@ -1,6 +1,6 @@
 -----------------------
 Name: km_FBA 2018
-Version: 3-16-19
+Version: 4-1-19
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: Final Burn Alpha 2018

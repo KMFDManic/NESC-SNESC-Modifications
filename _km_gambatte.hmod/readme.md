@@ -1,6 +1,6 @@
 -----------------------
 Name: km_Gambatte
-Version: 2-18-19
+Version: 4-1-19
 Creator: KMFDManic
 Category: KMFDManic Experimental Core Set
 Emulated System: Game Boy/Game Boy Color

@@ -1,8 +1,8 @@
 -----------------------
 Name: km_Mednafen SuperGrafx
-Version: 2-28-19
+Version: 4-15-19
 Creator: KMFDManic
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: NEC SuperGrafx
 -----------------------
 === Core by libretro ===

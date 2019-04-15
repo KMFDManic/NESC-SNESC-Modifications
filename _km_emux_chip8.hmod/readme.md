@@ -1,8 +1,8 @@
 -----------------------
 Name: km_Emux CHIP-8
-Version: 2-18-19
+Version: 4-15-19
 Creator: KMFDManic
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: CHIP-8
 -----------------------
 === Core by libretro ===

@@ -1,8 +1,8 @@
 -----------------------
 Name: km_Caprice32
-Version: 4-1-19
+Version: 4-15-19
 Creator: KMFDManic/D_Skywalk
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: Amstrad CPC
 -----------------------
 === Core by libretro ===

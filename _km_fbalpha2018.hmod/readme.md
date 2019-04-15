@@ -1,8 +1,8 @@
 -----------------------
 Name: km_FBA 2018
-Version: 4-1-19
+Version: 4-15-19
 Creator: KMFDManic
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: Final Burn Alpha 2018
 -----------------------
 === Core by libretro ===

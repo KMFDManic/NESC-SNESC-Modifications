@@ -1,8 +1,8 @@
 -----------------------
 Name: km_TyrQuake
-Version: 3-16-19
+Version: 4-15-19
 Creator: KMFDManic
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: Quake Games
 -----------------------
 === Core by libretro ===

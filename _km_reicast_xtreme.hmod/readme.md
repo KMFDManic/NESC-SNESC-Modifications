@@ -1,8 +1,8 @@
 -----------------------
 Name: km_Reicast Xtreme
-Version: 3-16-19
+Version: 4-15-19
 Creator: KMFDManic/madmonkey/Autechre/flyinghead
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: Sega Dreamcast
 -----------------------
 === Core by libretro ===

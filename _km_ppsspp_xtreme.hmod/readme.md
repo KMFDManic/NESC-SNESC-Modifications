@@ -1,8 +1,8 @@
 -----------------------
 Name: km_PPSSPP Xtreme
-Version: 3-16-19
+Version: 4-15-19
 Creator: KMFDManic/madmonkey
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: Sony Playstation Portable
 -----------------------
 === Core by libretro ===

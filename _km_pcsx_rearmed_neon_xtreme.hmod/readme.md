@@ -1,8 +1,8 @@
 -----------------------
 Name: km_PCSX ReARMed Neon Xtreme
-Version: 4-1-19
+Version: 4-15-19
 Creator: KMFDManic/madmonkey
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: Sony Playstation 
 -----------------------
 === Core by libretro ===

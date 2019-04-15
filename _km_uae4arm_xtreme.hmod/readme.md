@@ -1,8 +1,8 @@
 -----------------------
 Name: km_UAE4ARM Xtreme
-Version: 2-18-19
+Version: 4-15-19
 Creator: KMFDManic/madmonkey/qclart/∆ + 0 / 9
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: Commodore Amiga
 -----------------------
 === Core by libretro ===

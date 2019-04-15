@@ -1,8 +1,8 @@
 -----------------------
 Name: km_MESS 2016
-Version: 2-18-19
+Version: 4-15-19
 Creator: KMFDManic/∆ + 0 / 9
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: MESS 2016
 -----------------------
 === Core by libretro ===

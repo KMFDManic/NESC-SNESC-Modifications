@@ -8,7 +8,7 @@
   * [Reddit](https://www.reddit.com/user/MDFMKanic/)
   * [GBA Temp](https://gbatemp.net/members/kmfdmanic.415325/)
   * [YouTube](https://www.youtube.com/channel/UCoRrbw6gyi4KRPGUNnVVjMQ)
-  * [Discord: Nintendo Classics](https://discord.me/page/nintendoclassics)
+  * [Discord: Nintendo/Sega/Sony Classics](https://discord.gg/bX9PqrC)
 
 ## Notes
 

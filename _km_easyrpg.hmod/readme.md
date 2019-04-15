@@ -1,8 +1,8 @@
 -----------------------
 Name: km_EasyRPG
-Version: 2-18-19
+Version: 4-15-19
 Creator: KMFDManic/Ghabry
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: RPG Maker 2000/2003
 -----------------------
 === Core by libretro ===

@@ -1,8 +1,8 @@
 -----------------------
 Name: km_VirtualJaguar
-Version: 2-28-19
+Version: 4-15-19
 Creator: KMFDManic
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: Atari Jaguar
 -----------------------
 === Core by libretro ===

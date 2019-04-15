@@ -1,8 +1,8 @@
 -----------------------
 Name: km_Daphne
 Creator: KMFDManic/madmonkey/BsLeNuL
-Version: 2-18-19
-Category: KMFDManic Experimental Core Set
+Version: 4-15-19
+Category: KMFD Experimental Cores
 Emulated System: Daphne Laserdisc Games
 -----------------------
 === Core by libretro ===

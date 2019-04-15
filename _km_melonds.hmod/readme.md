@@ -1,8 +1,8 @@
 -----------------------
 Name: km_melonDS
-Version: 2-18-19
+Version: 4-15-19
 Creator: KMFDManic/madmonkey
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: Nintendo DS
 -----------------------
 === Core by libretro ===

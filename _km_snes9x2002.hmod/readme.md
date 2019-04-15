@@ -1,8 +1,8 @@
 -----------------------
 Name: km_SNES9x2002
-Version: 3-16-19
+Version: 4-15-19
 Creator: KMFDManic/madmonkey/pcm
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: Super Nintendo/Super Famicom
 -----------------------
 === Core by libretro ===

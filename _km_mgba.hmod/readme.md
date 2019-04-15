@@ -1,8 +1,8 @@
 -----------------------
 Name: km_mGBA
-Version: 4-1-19
+Version: 4-15-19
 Creator: KMFDManic
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: Game Boy Advance/Game Boy Color/Game Boy
 -----------------------
 === Core by libretro ===

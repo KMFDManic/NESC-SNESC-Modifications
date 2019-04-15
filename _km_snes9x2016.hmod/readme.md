@@ -1,8 +1,8 @@
 -----------------------
 Name: km_SNES9x2016
-Version: 3-16-19
+Version: 4-15-19
 Creator: KMFDManic/madmonkey
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: Super Nintendo/Super Famicom/MSU-1
 -----------------------
 === Core by libretro ===

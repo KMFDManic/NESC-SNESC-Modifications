@@ -1,8 +1,8 @@
 -----------------------
 Name: km_gpSP
-Version: 2-18-19
+Version: 4-15-19
 Creator: KMFDManic/BsLeNuL
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: Game Boy Advance
 -----------------------
 === Core by libretro ===

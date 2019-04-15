@@ -1,8 +1,8 @@
 -----------------------
 Name: km_Atari 800
-Version: 2-18-19
+Version: 4-15-19
 Creator: KMFDManic
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: Atari 5200/800
 -----------------------
 === Core by libretro ===

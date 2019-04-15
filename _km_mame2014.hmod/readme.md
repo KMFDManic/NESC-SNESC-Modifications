@@ -1,8 +1,8 @@
 -----------------------
 Name: km_MAME 2014
-Version: 2-18-19
+Version: 4-15-19
 Creator: KMFDManic/gpstar
-Category: KMFDManic Experimental Core Set
+Category: KMFD Experimental Cores
 Emulated System: MAME 2014
 -----------------------
 === Core by libretro ===

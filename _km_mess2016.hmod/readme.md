@@ -7,7 +7,7 @@ Emulated System: MESS 2016
 -----------------------
 === Core by libretro ===
 
-MESS 2016 offers Multi Emulator Super System Support!
+MESS stands for Multi Emulator Super System!
 
 Additional HMOD, km_MESS Dependencies 2016 required!
 

@@ -1,7 +1,7 @@
 -----------------------
 Name: km_gpSP
-Version: 4-29-19
-Creator: KMFDManic/BsLeNuL
+Version: 5-18-19
+Creator: KMFDManic/bslenul
 Category: KMFD Experimental Cores
 Emulated System: Game Boy Advance
 Install Size: 192 KB

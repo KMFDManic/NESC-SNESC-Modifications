@@ -1,6 +1,6 @@
 -----------------------
 Name: km_Vice x64
-Version: 4-29-19
+Version: 5-18-19
 Creator: KMFDManic
 Category: KMFD Experimental Cores
 Emulated System: Commodore 64

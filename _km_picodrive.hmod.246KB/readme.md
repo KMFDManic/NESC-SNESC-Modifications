@@ -1,9 +1,9 @@
 -----------------------
 Name: km_PicoDrive
-Version: 4-29-19
+Version: 5-18-19
 Creator: KMFDManic
 Category: KMFD Experimental Cores
-Emulated System: Sega Genesis/Mega Drive/CD/Master System/Game Gear/32X
+Emulated System: Sega Genesis/Mega Drive/CD/Master System/32X
 Install Size: 246 KB
 -----------------------
 === Core by libretro ===

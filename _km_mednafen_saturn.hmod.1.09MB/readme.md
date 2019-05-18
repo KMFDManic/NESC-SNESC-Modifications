@@ -1,6 +1,6 @@
 -----------------------
 Name: km_Mednafen Saturn
-Version: 4-29-19
+Version: 5-18-19
 Creator: KMFDManic
 Category: KMFD Experimental Cores
 Emulated System: Sega Saturn

@@ -1,6 +1,6 @@
 -----------------------
 Name: km_MAME 2014
-Version: 4-29-19
+Version: 5-18-19
 Creator: KMFDManic/gpstar
 Category: KMFD Experimental Cores
 Emulated System: MAME 2014

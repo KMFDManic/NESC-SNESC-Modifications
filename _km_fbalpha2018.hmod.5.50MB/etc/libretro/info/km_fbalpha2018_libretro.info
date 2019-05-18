@@ -1,7 +1,7 @@
 display_name = "Arcade (km_FB Alpha 2018)"
 authors = "Team FB Alpha"
 supported_extensions = "iso|zip|7z"
-corename = "FB Alpha"
+corename = "FB Alpha 2018"
 manufacturer = "Various"
 categories = "Emulator"
 systemname = "Arcade (various)"

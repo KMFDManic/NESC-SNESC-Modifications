@@ -1,6 +1,6 @@
 -----------------------
 Name: km_PPSSPP Standard
-Version: 4-29-19
+Version: 5-18-19
 Creator: KMFDManic/madmonkey
 Category: KMFD Experimental Cores
 Emulated System: Sony Playstation Portable

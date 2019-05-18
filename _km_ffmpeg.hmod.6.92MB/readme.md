@@ -1,7 +1,7 @@
 -----------------------
 Name: km_FFmpeg
 Creator: KMFDManic/madmonkey
-Version: 4-29-19
+Version: 5-18-19
 Category: KMFD Experimental Cores
 Emulated System: FFmpeg Video Support
 Install Size: 6.92 MB

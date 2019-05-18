@@ -1,6 +1,6 @@
 -----------------------
 Name: km_DeSmuME 2015
-Version: 4-29-19
+Version: 5-18-19
 Creator: KMFDManic/madmonkey
 Category: KMFD Experimental Cores
 Emulated System: Nintendo DS

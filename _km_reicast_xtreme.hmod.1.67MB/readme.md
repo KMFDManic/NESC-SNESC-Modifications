@@ -1,6 +1,6 @@
 -----------------------
 Name: km_Reicast Xtreme
-Version: 4-29-19
+Version: 5-18-19
 Creator: KMFDManic/madmonkey/Autechre/flyinghead
 Category: KMFD Experimental Cores
 Emulated System: Sega Dreamcast

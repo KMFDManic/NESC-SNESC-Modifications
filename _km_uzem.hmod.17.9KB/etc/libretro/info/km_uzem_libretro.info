@@ -1,6 +1,6 @@
 display_name = "Uzebox (km_Uzem)"
 supported_extensions = "uze"
-corename = "uzem"
+corename = "Uzem"
 manufacturer = "Uzebox"
 categories = "Emulator"
 systemname = "Uzebox"

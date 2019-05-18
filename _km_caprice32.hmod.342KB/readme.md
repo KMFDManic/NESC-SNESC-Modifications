@@ -1,6 +1,6 @@
 -----------------------
 Name: km_Caprice32
-Version: 4-29-19
+Version: 5-18-19
 Creator: KMFDManic/D_Skywalk
 Category: KMFD Experimental Cores
 Emulated System: Amstrad CPC

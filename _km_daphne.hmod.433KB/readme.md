@@ -1,7 +1,7 @@
 -----------------------
 Name: km_Daphne
-Creator: KMFDManic/madmonkey/BsLeNuL
-Version: 4-29-19
+Creator: KMFDManic/madmonkey/bslenul
+Version: 5-18-19
 Category: KMFD Experimental Cores
 Emulated System: Daphne Laserdisc Games
 Install Size: 433 KB

@@ -1,6 +1,6 @@
 -----------------------
 Name: km_SNES9x2010
-Version: 4-29-19
+Version: 5-18-19
 Creator: KMFDManic/madmonkey
 Category: KMFD Experimental Cores
 Emulated System: Super Nintendo/Super Famicom

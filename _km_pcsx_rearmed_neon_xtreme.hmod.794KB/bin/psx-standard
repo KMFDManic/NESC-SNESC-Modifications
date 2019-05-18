@@ -1,2 +1,0 @@
-#!/bin/sh
-exec retroarch-clover km_pcsx_rearmed_neon_standard "$@"

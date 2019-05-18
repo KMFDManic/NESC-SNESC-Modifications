@@ -1,6 +1,6 @@
 -----------------------
 Name: km_PX68k
-Version: 4-29-19
+Version: 5-18-19
 Creator: KMFDManic
 Category: KMFD Experimental Cores
 Emulated System: Sharp X68000
@@ -9,8 +9,8 @@ Install Size: 167 KB
 === Core by libretro ===
 
 Available executables and arguments to run Core:
--/bin/px68k <rom> <clover_args>
--/bin/sharp <rom> <clover_args>
+- /bin/px68k <rom> <clover_args>
+- /bin/sharp <rom> <clover_args>
 
 Hakchi module system by madmonkey
 

@@ -1,7 +1,7 @@
 display_name = "SNK - Neo Geo CD (km_NeoCD 2018)"
 authors = "Elta"
 supported_extensions = "cue"
-corename = "NeoCD"
+corename = "NeoCD 2018"
 manufacturer = "SNK"
 categories = "Emulator"
 systemname = "SNK Neo Geo CD"

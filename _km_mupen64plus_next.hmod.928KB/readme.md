@@ -1,6 +1,6 @@
 -----------------------
 Name: km_Mupen64Plus Next
-Version: 4-29-19
+Version: 5-18-19
 Creator: KMFDManic/CompCom/m4xw
 Category: KMFD Experimental Cores
 Emulated System: Nintendo 64

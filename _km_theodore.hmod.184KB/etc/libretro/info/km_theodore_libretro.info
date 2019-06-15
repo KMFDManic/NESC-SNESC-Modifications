@@ -1,4 +1,4 @@
-didisplay_name = "Thomson - MO/TO (km_Theodore)"
+display_name = "Thomson - MO/TO (km_Theodore)"
 authors = "T. Lorblanches"
 supported_extensions = "fd|sap|k7|m7|m5|rom"
 corename = "Theodore"

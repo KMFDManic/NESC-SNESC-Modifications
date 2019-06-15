@@ -1,22 +1,12 @@
 -----------------------
-Name: km_Cannonball
-Version: 5-18-19
-Creator: KMFDManic/madmonkey
-Category: KMFD Experimental Cores
+Name: Cannonball
+Version: 6-15-19
+Creator: Chris White
+Core By: Libretro
+HMOD By: KMFDManic|madmonkey
+Category: KMFD Cores
 Emulated System: Cannonball Out Run Engine
 Install Size: 134 KB
 -----------------------
-=== Core by libretro ===
-
 Available executables and arguments to run Core:
 - /bin/cannonball <rom> <clover_args>
-
-Hakchi module system by madmonkey
-
-RetroArch Xtreme + HMODS maintained by KMFDManic/madmonkey/pcm
-
-NES/SNES Mini shell integration by Cluster
-
-Hakchi CE by Team Shinkansen (DanTheMan827/princess_daphie/skogaby/madmonkey)
-
-(c) 2016-20xx

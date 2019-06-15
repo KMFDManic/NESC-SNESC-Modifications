@@ -1,13 +1,13 @@
 -----------------------
-Name: km_PPSSPP Xtreme
-Version: 5-18-19
-Creator: KMFDManic/madmonkey
-Category: KMFD Experimental Cores
+Name: PPSSPP Xtreme
+Version: 6-15-19
+Creator: Henrik Hrydgard
+Core By: Libretro
+HMOD By: KMFDManic|madmonkey
+Category: KMFD Cores
 Emulated System: Sony Playstation Portable
 Install Size: 18.6 MB
 -----------------------
-=== Core by libretro ===
-
 Available executables and arguments to run Core:
 - /bin/ppsspp <rom> <clover_args> (triggers PPSSPP Xtreme Mode Activate! - Requires RetroArch 1.7.5+!)
 - /bin/ppsspp-standard <rom> <clover_args> (triggers PPSSPP Standard Mode Activate! - Works with RetroArch 1.7.4-1.7.5+!)
@@ -41,16 +41,6 @@ should be done normally, not by loading another Core, such as 2048!  It will tak
 approximately 10-15 seconds to successfully exit any given game.  Be patient!  Auto
 frame skip should also be disabled, and frame skip set to 0.  Frame skip at 1 will 
 work well for many stubborn games.  But, if you get black screen, switch back to 0!
-
-Hakchi module system by madmonkey
-
-RetroArch Xtreme + HMODS maintained by KMFDManic/madmonkey/pcm
-
-NES/SNES Mini shell integration by Cluster
-
-Hakchi CE by Team Shinkansen (DanTheMan827/princess_daphie/skogaby/madmonkey)
-
-(c) 2016-20xx
 
 PPSSPP - a fast and portable PSP emulator
 =========================================
@@ -273,4 +263,3 @@ Update (Kyhel) :
 go to see there http://forums.ppsspp.org/showthread.php?tid=3595&pid=59241#pid59241
 * Got it tested windows <-> mac osx <-> psp, it works
 * Monster Hunter 3rd HD works too, as well as God Eater Burst.
-

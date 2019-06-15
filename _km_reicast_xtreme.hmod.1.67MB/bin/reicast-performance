@@ -1,3 +1,0 @@
-#!/bin/sh
-echo "1" > "/proc/sys/vm/overcommit_memory"
-exec retroarch-clover "km_$(basename "$0")" ${1+"$@"}

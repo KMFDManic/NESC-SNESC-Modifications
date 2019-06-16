@@ -11,4 +11,4 @@ else
   [ -f "$system/neogeo.zip" ] && [ ! -s "$game_path/neogeo.zip" ] && mount -o bind "$system/neogeo.zip" "$game_path/neogeo.zip"
 fi
 
-exec retroarch-clover km_fbaneo "$@"
+exec retroarch-clover km_fbneo "$@"

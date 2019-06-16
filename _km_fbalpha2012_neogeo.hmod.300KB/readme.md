@@ -1,5 +1,5 @@
 -----------------------
-Name: FBA 2012 Neo-Geo
+Name: FB Alpha 2012 Neo-Geo
 Version: 6-15-19
 Creator: Team FB Alpha
 Core By: Libretro

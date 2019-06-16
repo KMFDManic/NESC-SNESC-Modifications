@@ -1,5 +1,5 @@
 -----------------------
-Name: FBA 2012
+Name: FB Alpha 2012
 Version: 6-15-19
 Creator: Team FB Alpha
 Core By: Libretro

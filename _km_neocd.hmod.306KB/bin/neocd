@@ -1,2 +1,2 @@
 #!/bin/sh
-exec retroarch-clover km_neocd2018 "$@"
+exec retroarch-clover km_neocd "$@"

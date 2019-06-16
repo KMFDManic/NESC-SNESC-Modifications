@@ -1,5 +1,5 @@
 -----------------------
-Name: FBA 2012 CPS3
+Name: FB Alpha 2012 CPS3
 Version: 6-15-19
 Creator: Team FB Alpha
 Core By: Libretro

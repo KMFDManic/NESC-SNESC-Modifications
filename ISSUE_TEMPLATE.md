@@ -1,7 +1,7 @@
 ### Step 1: Describe your setup:
 
   * hakchi2 CE version: _____
-  * retroarch used (filename): _____
+  * RetroArch used (filename): _____
   * hmod(s) used by the game you are having problems with (filenames): _____
   
 ### Step 2: Describe the problem:

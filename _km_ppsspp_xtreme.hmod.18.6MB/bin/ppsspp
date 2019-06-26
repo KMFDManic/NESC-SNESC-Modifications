@@ -8,4 +8,4 @@ mkdir -p "$savepath/PSP" "$cachepath"
 ln -nsf -T "$savepath/PSP" "$cachepath/PSP"
 
 echo "1" > "/proc/sys/vm/overcommit_memory"
-exec retroarch-clover "km_$(basename "$0")" "$@"
+exec retroarch-clover "km_$(basename "$0")" "$@" --ra-nosaves

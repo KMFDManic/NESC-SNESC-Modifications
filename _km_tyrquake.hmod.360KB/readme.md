@@ -1,6 +1,6 @@
 -----------------------
 Name: TyrQuake
-Version: 6-15-19
+Version: 6-26-19
 Creator: Kevin Shanahan (Tyrann)
 Core By: Libretro
 HMOD By: KMFDManic

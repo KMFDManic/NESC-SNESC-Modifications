@@ -1,6 +1,6 @@
 -----------------------
 Name: PPSSPP Xtreme
-Version: 6-15-19
+Version: 6-26-19
 Creator: Henrik Hrydgard
 Core By: Libretro
 HMOD By: KMFDManic|madmonkey

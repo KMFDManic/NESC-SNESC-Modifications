@@ -25,9 +25,9 @@ if ! [ -d "/var/cache/retroarch/PSP" ]; then
 fi
 
 if [ -f "/bin/retroarch-clover-child" ]; then
-  retroarch-clover-child "km_$(basename "$0")" "$@"
+  retroarch-clover-child "km_$(basename "$0")" "$@" --ra-nosaves
 else
-  retroarch-clover "km_$(basename "$0")" "$@"
+  retroarch-clover "km_$(basename "$0")" "$@" --ra-nosaves
 fi
 
 exit_code=$?

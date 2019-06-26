@@ -1,16 +1,2 @@
 #!/bin/sh
-system="/etc/libretro/system"
-rom=$1
-game_path=$(dirname "$rom")
-
-[ -f "$system/neogeo_old.zip" ] && ngbios=$system/neogeo_old.zip # use neogeo_old.zip if it exists in /system
-[ ! -f "$system/neogeo_old.zip" ] && [ -f "$system/neogeo.zip" ] && ngbios=$system/neogeo.zip # use neogeo.zip if no neogeo_old.zip (e.g. the user only have mame2003 installed)
-[ -L "$game_path/neogeo.zip" ] && rm "$game_path/neogeo.zip" # delete symlink from previous versions of the core if it exists
-
-if [ ! -f "$game_path/neogeo.zip" ]; then
-  [ ! -z "$ngbios" ] && touch "$game_path/neogeo.zip" && mount -o bind "$ngbios" "$game_path/neogeo.zip" # create a fake neogeo.zip in the game folder and overmount it
-else
-  [ ! -z "$ngbios" ] && [ ! -s "$game_path/neogeo.zip" ] && mount -o bind "$ngbios" "$game_path/neogeo.zip" # if neogeo.zip already exists in the game folder and is a fake one (0B), overmount
-fi
-
 exec retroarch-clover km_mame2003_xtreme "$@"

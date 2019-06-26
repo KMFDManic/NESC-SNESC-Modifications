@@ -1,6 +1,6 @@
 -----------------------
 Name: MAME 2003 Xtreme
-Version: 6-15-19
+Version: 6-26-19
 Creator: MAMEdev
 Core By: Libretro
 HMOD By: KMFDManic|gpstar|madmonkey

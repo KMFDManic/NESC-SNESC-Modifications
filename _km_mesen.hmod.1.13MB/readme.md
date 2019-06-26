@@ -1,6 +1,6 @@
 -----------------------
 Name: Mesen
-Version: 6-15-19
+Version: 6-26-19
 Creator: M. Bibaud (aka Sour)
 HMOD By: KMFDManic|madmonkey|Swingflip
 Category: KMFD Cores

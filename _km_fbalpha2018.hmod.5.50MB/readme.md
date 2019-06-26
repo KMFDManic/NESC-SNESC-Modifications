@@ -1,5 +1,5 @@
 -----------------------
-Name: FBA 2018 (FBA)
+Name: FB Alpha 2018 (FBA)
 Version: 6-26-19
 Creator: Team FB Alpha
 Core By: Libretro

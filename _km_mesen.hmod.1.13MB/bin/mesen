@@ -1,3 +1,2 @@
 #!/bin/sh
-
 exec retroarch-clover km_mesen "$@"

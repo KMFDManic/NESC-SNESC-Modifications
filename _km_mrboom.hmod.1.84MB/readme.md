@@ -1,6 +1,6 @@
 -----------------------
 Name: Mr.Boom
-Version: 6-15-19
+Version: 7-1-19
 Creator: Remdy
 Core By: Libretro
 HMOD By: KMFDManic|frranck

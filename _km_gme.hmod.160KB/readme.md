@@ -1,6 +1,6 @@
 -----------------------
 Name: Game Music Emu
-Version: 6-15-19
+Version: 7-1-19
 Creator: Blargg
 Core By: Libretro
 HMOD By: KMFDManic

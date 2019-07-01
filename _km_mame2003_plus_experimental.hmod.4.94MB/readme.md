@@ -1,6 +1,6 @@
 -----------------------
 Name: MAME 2003 Plus Experimental
-Version: 6-26-19
+Version: 7-1-19
 Creator: MAMEdev|MAME 2003-Plus Team
 Core By: Libretro
 HMOD By: KMFDManic

@@ -1,6 +1,6 @@
 -----------------------
 Name: 4DO
-Version: 6-15-19
+Version: 7-1-19
 Creator: JohnnyDude|FreeDO team|trapexit
 Core By: Libretro
 HMOD By: KMFDManic

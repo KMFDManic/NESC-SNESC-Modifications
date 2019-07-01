@@ -1,6 +1,6 @@
 -----------------------
 Name: VBA-M
-Version: 6-15-19
+Version: 7-1-19
 Creator: Forgotten|VBA-M Team
 Core By: Libretro
 HMOD By: KMFDManic

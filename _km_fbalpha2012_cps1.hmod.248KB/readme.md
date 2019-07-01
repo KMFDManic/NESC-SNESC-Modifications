@@ -1,6 +1,6 @@
 -----------------------
 Name: FB Alpha 2012 CPS1
-Version: 6-15-19
+Version: 7-1-19
 Creator: Team FB Alpha
 Core By: Libretro
 HMOD By: KMFDManic

@@ -1,6 +1,6 @@
 -----------------------
 Name: Mednafen NGP
-Version: 6-26-19
+Version: 7-1-19
 Creator: neopop_uk|Mednafen Team
 Core By: Libretro
 HMOD By: KMFDManic

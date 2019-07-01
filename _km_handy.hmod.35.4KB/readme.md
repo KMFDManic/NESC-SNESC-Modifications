@@ -1,6 +1,6 @@
 -----------------------
 Name: Handy
-Version: 6-15-19
+Version: 7-1-19
 Creator: K. Wilkins
 Core By: Libretro
 HMOD By: KMFDManic

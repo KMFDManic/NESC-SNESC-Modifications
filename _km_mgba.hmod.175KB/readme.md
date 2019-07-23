@@ -1,6 +1,6 @@
 -----------------------
 Name: mGBA
-Version: 7-1-19
+Version: 7-23-19
 Creator: endrift
 Core By: Libretro
 HMOD By: KMFDManic

@@ -1,0 +1,12 @@
+-----------------------
+Name: TIC-80
+Version: 7-23-19
+Creator: Nesbox|Rob Loach
+Core By: Libretro
+HMOD By: KMFDManic|madmonkey
+Category: KMFD Cores
+Emulated System: TIC-80
+Install Size: 385 KB
+-----------------------
+Available executables and arguments to run Core:
+- /bin/tic80 <rom> <clover_args>

@@ -1,7 +1,7 @@
 display_name = "Nintendo - SNES / Famicom (km_Snes9x 2016 Bright)"
 authors = "Snes9x Team"
 supported_extensions = "smc|sfc|swc|fig|bs|sfrom"
-corename = "Snes9x"
+corename = "Snes9x 2016 Bright"
 manufacturer = "Nintendo"
 categories = "Emulator"
 systemname = "Super Nintendo Entertainment System"

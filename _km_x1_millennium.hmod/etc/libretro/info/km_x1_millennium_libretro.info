@@ -1,0 +1,13 @@
+display_name = "Sharp - X1 (km_X1 Millennium)"
+authors = "yui"
+supported_extensions = "dx1|zip|2d|2hd|tfd|d88|88d|hdm|xdf|dup|tap|cmd"
+corename = "x1"
+categories = "Computer"
+database = "Sharp X1"
+systemname = "Sharp X1 emulator"
+license = "Unknow"
+permissions = ""
+display_version = "0.60"
+supports_no_game = "false"
+notes = "(!) X1 requires BIOS 'IPLROM.X1' and 'IPLROM.X1T' in system folder "
+

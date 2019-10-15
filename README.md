@@ -1,4 +1,4 @@
-# NESC-SNESC-Modifications
+# MD-S-NESC-PSC-Modifications
 
 ### Are you in the correct place?
 
@@ -8,7 +8,7 @@
   * [Reddit](https://www.reddit.com/user/MDFMKanic/)
   * [GBA Temp](https://gbatemp.net/members/kmfdmanic.415325/)
   * [YouTube](https://www.youtube.com/channel/UCoRrbw6gyi4KRPGUNnVVjMQ)
-  * [Discord: Nintendo/Sega/Sony Classics](https://discord.gg/bX9PqrC)
+  * [Discord: Rockin' The Classics](https://discord.gg/kt63tJq)
 
 ## Notes
 

@@ -1,7 +1,7 @@
 display_name = "Commodore - Amiga (km_P-UAE Xtreme)"
 authors = "GnoStiC"
 supported_extensions = "adf|dms|fdi|ipf|zip|hdf|hdz|m3u|uae"
-corename = "PUAE Xtreme"
+corename = "P-UAE Xtreme"
 manufacturer = "Commodore"
 categories = "Emulator"
 systemname = "Commodore Amiga"

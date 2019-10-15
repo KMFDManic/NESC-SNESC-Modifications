@@ -1,6 +1,6 @@
 -----------------------
 Name: BSNES (Slow)
-Version: 9-9-19
+Version: 10-15-19
 Creator: byuu|Alcaro|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

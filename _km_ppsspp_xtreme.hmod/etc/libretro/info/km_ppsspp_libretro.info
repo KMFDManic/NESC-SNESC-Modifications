@@ -1,7 +1,7 @@
 display_name = "Sony - PlayStation Portable (km_PPSSPP Xtreme)"
 authors = "Henrik Hrydgard"
 supported_extensions = "elf|iso|cso|prx|pbp"
-corename = "PPSSPP"
+corename = "PPSSPP Xtreme"
 manufacturer = "Sony"
 categories = "Emulator"
 systemname = "PSP"

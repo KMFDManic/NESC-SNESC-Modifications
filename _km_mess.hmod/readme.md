@@ -1,6 +1,6 @@
 -----------------------
-Name: MESS
-Version: 9-9-19
+Name: MESS (Slow)
+Version: 10-15-19
 Creator: MAMEdev|Libretro
 HMOD By: KMFDManic|∆ + 0 / 9|Greenchili
 Category: KMFD Cores

@@ -1,6 +1,6 @@
 -----------------------
 Name: VBA-M
-Version: 9-9-19
+Version: 10-15-19
 Creator: Forgotten|VBA-M Team|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

@@ -1,6 +1,6 @@
 -----------------------
-Name: Meteor
-Version: 9-9-19
+Name: Meteor (Slow)
+Version: 10-15-19
 Creator: Philippe Daouadi|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

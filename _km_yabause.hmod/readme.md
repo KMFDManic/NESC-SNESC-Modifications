@@ -1,6 +1,6 @@
 -----------------------
 Name: Yabause (Slow)
-Version: 9-9-19
+Version: 10-15-19
 Creator: Guillaume Duhammel|Theo Berkau|Anders Montonen|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

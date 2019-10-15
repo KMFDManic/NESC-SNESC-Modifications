@@ -1,6 +1,6 @@
 -----------------------
 Name: Snes9x2018 (Snes9x)
-Version: 9-9-19
+Version: 10-15-19
 Creator: Snes9x Team|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

@@ -1,8 +1,7 @@
 -----------------------
 Name: TIC-80
-Version: 9-9-19
+Version: 10-15-19
 Creator: Nesbox|Rob Loach|Libretro
-Core By: Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores
 Emulated System: TIC-80

@@ -1,6 +1,6 @@
 -----------------------
 Name: Cannonball
-Version: 9-9-19
+Version: 10-15-19
 Creator: Chris White|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

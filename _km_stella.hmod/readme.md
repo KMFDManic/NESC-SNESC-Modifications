@@ -1,6 +1,6 @@
 -----------------------
 Name: Stella
-Version: 9-9-19
+Version: 10-15-19
 Creator: Stephen Anthony|Bradford Mott|Eckhard Stolberg|Brian Watson|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

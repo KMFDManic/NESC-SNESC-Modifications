@@ -1,6 +1,6 @@
 -----------------------
 Name: XRick
-Version: 9-9-19
+Version: 10-15-19
 Creator: Core Design|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

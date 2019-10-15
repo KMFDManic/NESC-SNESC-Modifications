@@ -1,6 +1,6 @@
 -----------------------
 Name: PCSX1
-Version: 9-9-19
+Version: 10-15-19
 Creator: PCSX Team|notaz|Exophase
 Core By: Libretro
 HMOD By: KMFDManic|madmonkey

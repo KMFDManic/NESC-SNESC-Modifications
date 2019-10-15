@@ -1,0 +1,2 @@
+#!/bin/sh
+exec ppsspp-standard ${1+"$@"}

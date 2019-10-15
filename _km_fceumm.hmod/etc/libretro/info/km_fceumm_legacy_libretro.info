@@ -1,7 +1,7 @@
 display_name = "Nintendo - NES / Famicom (km_FCEUmm Legacy)"
 authors = "FCEU Team|CaH4e3"
 supported_extensions = "fds|nes|unif|unf"
-corename = "FCEUmm"
+corename = "FCEUmm Legacy"
 manufacturer = "Nintendo"
 categories = "Emulator"
 systemname = "Nintendo Entertainment System"

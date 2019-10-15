@@ -1,6 +1,6 @@
 -----------------------
 Name: ParaLLEl N64
-Version: 9-9-19
+Version: 10-15-19
 Creator: Hacktarux|Mupen64Plus Team|TinyTiger|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

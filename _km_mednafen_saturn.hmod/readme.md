@@ -1,6 +1,6 @@
 -----------------------
 Name: Mednafen Saturn (Slow)
-Version: 9-9-19
+Version: 10-15-19
 Creator: Mednafen Team|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

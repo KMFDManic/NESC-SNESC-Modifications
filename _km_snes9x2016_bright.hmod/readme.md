@@ -1,11 +1,11 @@
 -----------------------
 Name: Snes9x2016 Bright
-Version: 10-15-19
+Version: 10-25-19
 Creator: Snes9x Team|Libretro
 HMOD By: KMFDManic|madmonkey|kps501|gpstar|byuu
 Category: KMFD Cores
 Emulated System: Nintendo: SNES
-Command Line Argument: /bin/snes9x2016-bright
+Command Line: /bin/snes9x2016-bright, /bin/snes16-bright, /bin/snes (With 1 9X Core Installed)
 Prerequisite BIOS: BS-X.bin (BS-X Satellaview), STBIOS.bin (Sufami Turbo)
 -----------------------
 ![km](https://i.imgur.com/xAKS8Cw.png)

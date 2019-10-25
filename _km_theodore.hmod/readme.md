@@ -1,10 +1,10 @@
 -----------------------
 Name: Theodore
-Version: 10-15-19
+Version: 10-25-19
 Creator: T. Lorblanches|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores
 Emulated System: Thomson: MO5
-Command Line Argument: /bin/theodore
+Command Line: /bin/theodore
 -----------------------
 ![km](https://i.imgur.com/QG1qF1u.png)

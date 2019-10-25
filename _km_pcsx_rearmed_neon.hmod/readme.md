@@ -1,11 +1,11 @@
 -----------------------
 Name: PCSX ReARMed Neon
-Version: 10-15-19
+Version: 10-25-19
 Creator: PCSX Team|notaz|Exophase|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores
 Emulated System: Sony: PSX
-Command Line Argument: /bin/pcsx-rearmed-neon, /bin/pcsx-rearmed-peops, /bin/pcsx-rearmed-unai
+Command Line: /bin/pcsx-rearmed-neon, /bin/pcsx-rearmed-peops, /bin/pcsx-rearmed-unai, /bin/neon/, /bin/peops, /bin/unai, bin/pcsx
 Prerequisite BIOS: system/scph5500.bin, scph5501.bin, scph5502.bin
 -----------------------
 ![km](https://i.imgur.com/Sy0QGNc.png)

@@ -1,10 +1,10 @@
 -----------------------
 Name: FUSE
-Version: 10-15-19
+Version: 10-25-19
 Creator: Team Fuse|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores
 Emulated System: Sinclair: ZX Spectrum
-Command Line Argument: /bin/fuse
+Command Line: /bin/fuse, /bin/zx, /bin/z80
 -----------------------
 ![km](https://i.imgur.com/eoK9xfL.png)

@@ -1,10 +1,10 @@
 -----------------------
 Name: Mupen64Plus
-Version: 10-15-19
+Version: 10-25-19
 Creator: Hacktarux|Mupen64Plus Team|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores
 Emulated System: Nintendo: N64
-Command Line Argument: /bin/mupen64plus
+Command Line: /bin/mupen64plus, /bin/n64 (With 1 N64 Core Installed)
 -----------------------
 ![km](https://i.imgur.com/I4qcftG.png)

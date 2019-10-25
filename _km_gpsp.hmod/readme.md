@@ -1,11 +1,11 @@
 -----------------------
 Name: gpSP
-Version: 10-15-19
+Version: 10-25-19
 Creator: Exophase|Libretro
 HMOD By: KMFDManic|bslenul
 Category: KMFD Cores
 Emulated System: Nintendo: GBA
-Command Line Argument: /bin/gpsp
+Command Line: /bin/gpsp
 Prerequisite BIOS: system/gba_bios.bin
 -----------------------
 ![km](https://i.imgur.com/KOWRX1y.png)

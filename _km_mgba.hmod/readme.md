@@ -1,11 +1,11 @@
 -----------------------
 Name: mGBA
-Version: 10-15-19
+Version: 10-25-19
 Creator: endrift|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores
 Emulated System: Nintendo: GBA
-Command Line Argument: /bin/mgba
+Command Line: /bin/mgba, /bin/gba
 -----------------------
 ![km](https://i.imgur.com/C810JKk.png)
  

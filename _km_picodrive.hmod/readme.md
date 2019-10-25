@@ -1,11 +1,11 @@
 -----------------------
 Name: PicoDrive
-Version: 10-15-19
+Version: 10-25-19
 Creator: notaz|fdave|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores
 Emulated System: Sega: 32X|GG|CD
-Command Line Argument: /bin/picodrive
+Command Line: /bin/picodrive, /bin/32x
 Prerequisite BIOS: system/bios_CD_E.bin, bios_CD_J.bin, bios_CD_U.bin (SEGA-CD)
 -----------------------
 ![km](https://i.imgur.com/NoDlXLV.png)

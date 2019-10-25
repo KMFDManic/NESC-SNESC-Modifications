@@ -1,10 +1,10 @@
 -----------------------
 Name: Snes9x2010
-Version: 10-15-19
+Version: 10-25-19
 Creator: Snes9x Team|Squarepusher|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores
 Emulated System: Nintendo: SNES
-Command Line Argument: /bin/snes9x2010
+Command Line: /bin/snes9x2010, /bin/snes10, /bin/snes (With 1 9X Core Installed)
 -----------------------
 ![km](https://i.imgur.com/uykjX3g.png)

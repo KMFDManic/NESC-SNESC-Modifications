@@ -1,11 +1,11 @@
 -----------------------
 Name: MESS (Slow)
-Version: 10-15-19
+Version: 10-25-19
 Creator: MAMEdev|Libretro
 HMOD By: KMFDManic|∆ + 0 / 9|Greenchili
 Category: KMFD Cores
 Emulated System: MESS
-Command Line Argument: /bin/mess
+Command Line: /bin/mess
 -----------------------
 ![km](https://i.imgur.com/XvzoDOH.png)
 

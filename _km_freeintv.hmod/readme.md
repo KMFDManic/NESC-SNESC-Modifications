@@ -1,11 +1,11 @@
 -----------------------
 Name: FreeINTV
-Version: 10-15-19
+Version: 10-25-19
 Creator: David Richardson|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores
 Emulated System: Mattel: Intellivision
-Command Line Argument: /bin/freeintv
+Command Line: /bin/freeintv, /bin/int
 Prerequisite BIOS: system/exec.bin, grom.bin
 -----------------------
 ![km](https://i.imgur.com/3Rtqc9X.png)

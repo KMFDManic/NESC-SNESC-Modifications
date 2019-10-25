@@ -1,6 +1,6 @@
 -----------------------
 Name: NeoCD
-Version: 10-15-19
+Version: 10-25-19
 Creator: Elta|Fabrice Martinez|Libretro
 HMOD By: KMFDManic|madmonkey|bslenul
 Category: KMFD Cores

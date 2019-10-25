@@ -1,10 +1,10 @@
 -----------------------
 Name: TyrQuake
-Version: 10-15-19
+Version: 10-25-19
 Creator: Kevin Shanahan (Tyrann)|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores
 Emulated System: Quake Games
-Command Line Argument: /bin/tyrquake
+Command Line: /bin/tyrquake, /bin/pak
 -----------------------
 ![km](https://i.imgur.com/Yti04FV.png)

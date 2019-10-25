@@ -1,11 +1,11 @@
 -----------------------
 Name: Caprice32
-Version: 10-15-19
+Version: 10-25-19
 Creator: Ulrich Doewich|dantoine|Libretro
 HMOD By: KMFDManic|D_Skywalk
 Category: KMFD Cores
 Emulated System: Amstrad: CPC
-Command Line Argument: /bin/caprice32
+Command Line: /bin/caprice32, /bin/cap32
 -----------------------
 ![km](https://i.imgur.com/fdQEk1R.png)
 

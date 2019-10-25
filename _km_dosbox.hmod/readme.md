@@ -1,10 +1,10 @@
 -----------------------
 Name: DOSBox
-Version: 10-15-19
+Version: 10-25-19
 Creator: DOSBox Team|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores
 Emulated System: Microsoft: MS-DOS
-Command Line Argument: /bin/dosbox
+Command Line: /bin/dosbox
 -----------------------
 ![km](https://i.imgur.com/SctPuCC.png)

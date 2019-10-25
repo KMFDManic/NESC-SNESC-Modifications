@@ -1,10 +1,10 @@
 -----------------------
 Name: FB Alpha 2012 CPS3
-Version: 10-15-19
+Version: 10-25-19
 Creator: Team FB Alpha|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores
 Emulated System: Arcade
-Command Line Argument: /bin/fba2012-cps3
+Command Line: /bin/fba2012-cps3, /bin/cps3
 -----------------------
 ![km](https://i.imgur.com/lTx0NwT.png)

@@ -1,11 +1,11 @@
 -----------------------
 Name: X1 Millennium
-Version: 10-15-19
+Version: 10-25-19
 Creator: yui|Libretro
 HMOD By: KMFDManic|r-type
 Category: KMFD Cores
 Emulated System: Sharp: X1
-Command Line Argument: /bin/x1-millennium
+Command Line: /bin/x1-millennium, /bin/x1
 Prerequisite BIOS: system/xmil/IPLROM.X1 & IPLROM.X1T
 -----------------------
 ![km](https://i.imgur.com/NxVaUHT.png)

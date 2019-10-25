@@ -1,11 +1,11 @@
 -----------------------
 Name: Genesis Plus GX
-Version: 10-15-19
+Version: 10-25-19
 Creator: Charles McDonald|Eke-Eke|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores
 Emulated System: Sega: MD|GG|MS|CD
-Command Line Argument: /bin/genesis-plus-gx
+Command Line: /bin/genesis-plus-gx, /bin/gg, /bin/segacd, bin/sms
 Prerequisite BIOS: system/bios_CD_E.bin, bios_CD_J.bin, bios_CD_U.bin (SEGA-CD)
 -----------------------
 ![km](https://i.imgur.com/opH66xS.png)

@@ -1,6 +1,6 @@
 -----------------------
 Name: MAME 2014
-Version: 10-25-19
+Version: 11-26-19
 Creator: MAMEdev|Libretro
 HMOD By: KMFDManic|gpstar
 Category: KMFD Cores

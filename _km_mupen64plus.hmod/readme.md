@@ -1,6 +1,6 @@
 -----------------------
 Name: Mupen64Plus
-Version: 10-25-19
+Version: 11-26-19
 Creator: Hacktarux|Mupen64Plus Team|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

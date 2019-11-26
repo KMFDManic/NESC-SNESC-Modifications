@@ -1,6 +1,6 @@
 -----------------------
 Name: Snes9x2010
-Version: 10-25-19
+Version: 11-26-19
 Creator: Snes9x Team|Squarepusher|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

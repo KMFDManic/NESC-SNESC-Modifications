@@ -1,6 +1,6 @@
 -----------------------
 Name: FB Alpha 2018 (FBA)
-Version: 10-25-19
+Version: 11-26-19
 Creator: Team FB Alpha|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

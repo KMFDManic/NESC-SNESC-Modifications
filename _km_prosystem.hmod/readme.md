@@ -1,6 +1,6 @@
 -----------------------
 Name: ProSystem
-Version: 10-25-19
+Version: 11-26-19
 Creator: Greg Stanton|Brian Berlin|Leonis|Greg DeMent|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

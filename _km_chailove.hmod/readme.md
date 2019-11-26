@@ -1,6 +1,6 @@
 -----------------------
 Name: ChaiLove
-Version: 10-25-19
+Version: 11-26-19
 Creator: Rob Loach|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

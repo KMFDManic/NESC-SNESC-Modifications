@@ -1,6 +1,6 @@
 -----------------------
-Name: Snes9x2016 (Snes9x)
-Version: 10-25-19
+Name: Snes9x2016
+Version: 11-26-19
 Creator: Snes9x Team|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

@@ -1,6 +1,6 @@
 -----------------------
 Name: DOSBox SVN
-Version: 10-25-19
+Version: 11-26-19
 Creator: DOSBox Team|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

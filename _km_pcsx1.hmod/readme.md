@@ -1,8 +1,7 @@
 -----------------------
 Name: PCSX1
-Version: 10-25-19
-Creator: PCSX Team|notaz|Exophase
-Core By: Libretro
+Version: 11-26-19
+Creator: PCSX Team|notaz|Exophase|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores
 Emulated System: Sony: PSX

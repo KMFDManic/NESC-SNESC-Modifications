@@ -1,8 +1,7 @@
 -----------------------
 Name: NP2
-Version: 10-25-19
-Creator: Neko Project II Team
-Core By: Libretro
+Version: 11-26-19
+Creator: Neko Project II Team|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores
 Emulated System: NEC: PC-98

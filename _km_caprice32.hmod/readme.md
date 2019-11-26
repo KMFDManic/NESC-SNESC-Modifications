@@ -1,6 +1,6 @@
 -----------------------
 Name: Caprice32
-Version: 10-25-19
+Version: 11-26-19
 Creator: Ulrich Doewich|dantoine|Libretro
 HMOD By: KMFDManic|D_Skywalk
 Category: KMFD Cores

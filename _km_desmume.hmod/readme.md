@@ -1,6 +1,6 @@
 -----------------------
 Name: DeSmuME (Slow)
-Version: 10-25-19
+Version: 11-26-19
 Creator: YopYop156|Zeromus|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

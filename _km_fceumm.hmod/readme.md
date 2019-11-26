@@ -1,6 +1,6 @@
 -----------------------
 Name: FCEUmm
-Version: 10-25-19
+Version: 11-26-19
 Creator: FCEU Team|CaH4e3|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

@@ -1,6 +1,6 @@
 -----------------------
 Name: MAME 2003 Plus
-Version: 10-25-19
+Version: 11-26-19
 Creator: MAMEdev|MAME 2003-Plus Team|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

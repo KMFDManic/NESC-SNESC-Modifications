@@ -1,10 +1,10 @@
 -----------------------
-Name: PPSSPP Standard
-Version: 10-25-19
+Name: PPSSPP Legacy
+Version: 11-26-19
 Creator: Henrik Hrydgard|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores
 Emulated System: Sony: PSP
-Command Line: /bin/ppsspp-standard
+Command Line: /bin/ppsspp-legacy
 -----------------------
 ![km](https://i.imgur.com/mynGazp.png)

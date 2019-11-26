@@ -1,6 +1,6 @@
 -----------------------
 Name: Vecx
-Version: 10-25-19
+Version: 11-26-19
 Creator: Valavan Manohararajah|John Hawthorn|Nikita Zimin|Demeth|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

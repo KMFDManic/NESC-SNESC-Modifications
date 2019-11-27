@@ -16,6 +16,6 @@ These hmods are only compatible with [Hakchi2 CE](https://github.com/TeamShinkan
 
 To run game/s with this Core Set Release, you will need the following prerequisites:
 
-1. RetroArch (Recommended RetroArch 1.7.7 Xtreme and up; NES Cores come preinstalled)
+1. RetroArch (Recommended 1.8.1 Xtreme and up; NES Cores come preinstalled)
 2. Specific Core (Emulator) HMODs for whichever system the game/s are for.
 3. BIOS, if applicable, which can easily be installed with the Master BIOS Module.

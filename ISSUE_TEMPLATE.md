@@ -11,4 +11,4 @@
 ### Notes: Are you in the right place?
 
   * For issues or feature requests related to hakchi2CE goto [TeamShinkansen/hakchi2/issues](https://github.com/TeamShinkansen/hakchi2/issues) and file a Github issue.
-  * For general usage questions, post a question on [Reddit](https://www.reddit.com/user/MDFMKanic/) or the [Nintendo/Sega/Sony Classics Discord](https://discord.gg/bX9PqrC)
+  * For general usage questions, post a question on [Reddit](https://www.reddit.com/user/MDFMKanic/) or the [Rockin' The Classics Discord](https://discord.gg/bX9PqrC)

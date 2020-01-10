@@ -1,6 +1,6 @@
 -----------------------
 Name: NP2
-Version: 11-26-19
+Version: January 10th 2020
 Creator: Neko Project II Team|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

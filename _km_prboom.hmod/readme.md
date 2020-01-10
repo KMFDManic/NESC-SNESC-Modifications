@@ -1,6 +1,6 @@
 -----------------------
 Name: PrBoom
-Version: 11-26-19
+Version: January 10th 2020
 Creator: Florian Schulze|Libretro
 HMOD By: KMFDManic|madmonkey|bslenul
 Category: KMFD Cores

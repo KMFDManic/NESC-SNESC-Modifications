@@ -1,6 +1,6 @@
 -----------------------
 Name: REminiscence
-Version: 11-26-19
+Version: January 10th 2020
 Creator: Gregory Montoir|Stuart Carnie|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

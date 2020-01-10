@@ -1,6 +1,6 @@
 -----------------------
 Name: Mednafen NGP
-Version: 11-26-19
+Version: January 10th 2020
 Creator: neopop_uk|Mednafen Team|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

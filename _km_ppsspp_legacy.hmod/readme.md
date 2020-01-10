@@ -1,6 +1,6 @@
 -----------------------
 Name: PPSSPP Legacy
-Version: 11-26-19
+Version: January 10th 2020
 Creator: Henrik Hrydgard|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

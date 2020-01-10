@@ -1,6 +1,6 @@
 -----------------------
 Name: MAME 2003 Xtreme
-Version: 11-26-19
+Version: January 10th 2020
 Creator: MAMEdev|Libretro
 HMOD By: KMFDManic|gpstar|madmonkey|arcadez2003|grant2258|shantigilbert
 Category: KMFD Cores

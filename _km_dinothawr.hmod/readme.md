@@ -1,6 +1,6 @@
 -----------------------
 Name: Dinothawr
-Version: 11-26-19
+Version: January 10th 2020
 Creator: Themaister|Agnes Heyer|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

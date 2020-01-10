@@ -1,6 +1,6 @@
 -----------------------
 Name: FB NEO
-Version: 11-26-19
+Version: January 10th 2020
 Creator: Team FBNeo|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

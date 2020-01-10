@@ -1,6 +1,6 @@
 -----------------------
 Name: Snes9x2002
-Version: 11-26-19
+Version: January 10th 2020
 Creator: Snes9x Team|PocketSNES Team|Toadking|Libretro
 HMOD By: KMFDManic|madmonkey|pcm
 Category: KMFD Cores

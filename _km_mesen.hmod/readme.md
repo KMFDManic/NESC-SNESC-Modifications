@@ -1,6 +1,6 @@
 -----------------------
 Name: Mesen (Slow)
-Version: 11-26-19
+Version: January 10th 2020
 Creator: M. Bibaud (aka Sour)|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

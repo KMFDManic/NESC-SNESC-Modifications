@@ -1,6 +1,6 @@
 -----------------------
 Name: FUSE
-Version: 11-26-19
+Version: January 10th 2020
 Creator: Team Fuse|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

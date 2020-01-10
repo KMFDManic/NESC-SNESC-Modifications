@@ -1,6 +1,6 @@
 -----------------------
 Name: ScummVM
-Version: 11-26-19
+Version: January 10th 2020
 Creator: SCUMMVMdev|Libretro
 HMOD By: KMFDManic|madmonkey|Beylie|nava
 Category: KMFD Cores

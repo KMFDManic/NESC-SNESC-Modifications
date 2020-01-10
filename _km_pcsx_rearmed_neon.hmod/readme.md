@@ -1,6 +1,6 @@
 -----------------------
 Name: PCSX ReARMed Neon
-Version: 11-26-19
+Version: January 10th 2020
 Creator: PCSX Team|notaz|Exophase|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

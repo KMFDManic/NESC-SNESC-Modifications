@@ -1,6 +1,6 @@
 -----------------------
 Name: VirtualJaguar (Slow)
-Version: 11-26-19
+Version: January 10th 2020
 Creator: David Raingeard|Shamus|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

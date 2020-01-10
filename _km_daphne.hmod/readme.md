@@ -2,7 +2,7 @@
 Name: Daphne
 Creator: Matt Ownby|Libretro
 HMOD By: KMFDManic|madmonkey|bslenul
-Version: 11-26-19
+Version: January 10th 2020
 Category: KMFD Cores
 Emulated System: Arcade
 Command Line: /bin/daphne

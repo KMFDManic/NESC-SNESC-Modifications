@@ -6,6 +6,6 @@ HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores
 Emulated System: Commodore: Amiga CD32
 Command Line Arguments: /bin/cd32, /bin/puae-cd32-xtreme
-Prerequisite BIOS: system/kick40060.CD32 (Amiga CD32)
+Prerequisite BIOS: system/kick40060.CD32, kick40060.CD32.ext (Amiga CD32)
 -----------------------
 ![km](https://i.imgur.com/FCnj7e2.png)

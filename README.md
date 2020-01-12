@@ -1,4 +1,4 @@
-# MD-S-NESC-PSC-Modifications
+# KMFDManic Mini Classic Xtreme Core/HMOD Set
 
 ### Are you in the correct place?
 

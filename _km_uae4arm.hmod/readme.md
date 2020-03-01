@@ -1,6 +1,6 @@
 -----------------------
 Name: UAE4ARM
-Version: January 10th 2020
+Version: March 1st 2020
 Creator: GnoStiC|Libretro
 HMOD By: KMFDManic|madmonkey|qclart|∆ + 0 / 9
 Category: KMFD Cores

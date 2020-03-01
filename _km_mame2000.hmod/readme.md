@@ -1,6 +1,6 @@
 -----------------------
 Name: MAME 2000
-Version: January 10th 2020
+Version: March 1st 2020
 Creator: MAMEdev|Libretro
 HMOD By: KMFDManic|gpstar
 Category: KMFD Cores

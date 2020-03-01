@@ -1,6 +1,6 @@
 -----------------------
 Name: Snes9x2016 Bright
-Version: January 10th 2020
+Version: March 1st 2020
 Creator: Snes9x Team|Libretro
 HMOD By: KMFDManic|madmonkey|kps501|gpstar|byuu
 Category: KMFD Cores

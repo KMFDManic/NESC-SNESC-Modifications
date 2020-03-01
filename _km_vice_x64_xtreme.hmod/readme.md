@@ -1,6 +1,6 @@
 -----------------------
 Name: Vice x64 Xtreme
-Version: January 10th 2020
+Version: March 1st 2020
 Creator: VICE Core Team Members|rsn8887|sonninnos|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

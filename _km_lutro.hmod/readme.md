@@ -1,6 +1,6 @@
 -----------------------
 Name: Lutro
-Version: January 10th 2020
+Version: March 1st 2020
 Creator: Higor Euripedes|Jean-Andre Santoni|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

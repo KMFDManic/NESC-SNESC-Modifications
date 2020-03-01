@@ -1,6 +1,6 @@
 -----------------------
 Name: gpSP
-Version: January 10th 2020
+Version: March 1st 2020
 Creator: Exophase|Libretro
 HMOD By: KMFDManic|bslenul
 Category: KMFD Cores

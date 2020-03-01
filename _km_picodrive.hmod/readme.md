@@ -1,6 +1,6 @@
 -----------------------
 Name: PicoDrive
-Version: January 10th 2020
+Version: March 1st 2020
 Creator: notaz|fdave|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores
@@ -11,4 +11,4 @@ Prerequisite BIOS: system/bios_CD_E.bin, bios_CD_J.bin, bios_CD_U.bin (SEGA-CD)
 ![km](https://i.imgur.com/NoDlXLV.png)
 ![km](https://i.imgur.com/opH66xS.png)
 ![km](https://i.imgur.com/OQmtuKq.png)
-![km] https://i.imgur.com/ccwp5zl.png)
+![km](https://i.imgur.com/ccwp5zl.png)

@@ -1,6 +1,6 @@
 -----------------------
-Name: 4DO (Slow)
-Version: January 10th 2020
+Name: 4DO
+Version: March 1st 2020
 Creator: JohnnyDude|FreeDO team|trapexit|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

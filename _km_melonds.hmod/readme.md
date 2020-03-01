@@ -1,6 +1,6 @@
 -----------------------
 Name: melonDS (Slow)
-Version: January 10th 2020
+Version: March 1st 2020
 Creator: StapleButter|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

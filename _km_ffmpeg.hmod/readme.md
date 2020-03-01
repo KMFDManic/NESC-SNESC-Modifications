@@ -1,7 +1,7 @@
 -----------------------
 Name: FFmpeg
 Creator: Fabrice Bellard|FFmpeg team|Libretro
-Version: January 10th 2020
+Version: March 1st 2020
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores
 Emulated System: FFmpeg Video Support

@@ -1,6 +1,6 @@
 -----------------------
 Name: Mr.Boom
-Version: January 10th 2020
+Version: March 1st 2020
 Creator: Remdy|frranck|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

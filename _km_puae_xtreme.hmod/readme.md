@@ -1,6 +1,6 @@
 -----------------------
 Name: P-UAE Xtreme
-Version: January 10th 2020
+Version: March 1st 2020
 Creator: GnoStiC|rsn8887|sonninnos|Libretro
 HMOD By: KMFDManic|madmonkey|qclart|∆ + 0 / 9
 Category: KMFD Cores

@@ -1,6 +1,6 @@
 -----------------------
 Name: Emux CHIP-8
-Version: January 10th 2020
+Version: March 1st 2020
 Creator: Sebastien Ronsse|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

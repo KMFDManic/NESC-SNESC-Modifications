@@ -1,6 +1,6 @@
 -----------------------
 Name: fixNES (Slow)
-Version: January 10th 2020
+Version: March 1st 2020
 Creator: FIX94|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

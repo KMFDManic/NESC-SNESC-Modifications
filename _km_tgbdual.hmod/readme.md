@@ -1,6 +1,6 @@
 -----------------------
 Name: TGB Dual
-Version: January 10th 2020
+Version: March 1st 2020
 Creator: GIGO|Hii|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

@@ -1,6 +1,6 @@
 -----------------------
 Name: Snes9x2005
-Version: January 10th 2020
+Version: March 1st 2020
 Creator: Snes9x Team|dking|BassAceGold|ShadauxCat|Nebuleon|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

@@ -1,8 +1,8 @@
 -----------------------
 Name: MAME 2003 Xtreme
-Version: January 10th 2020
+Version: March 1st 2020
 Creator: MAMEdev|Libretro
-HMOD By: KMFDManic|gpstar|madmonkey|arcadez2003|grant2258|shantigilbert
+HMOD By: KMFDManic|gpstar|madmonkey|arcadez2003|grant2258
 Category: KMFD Cores
 Emulated System: Arcade
 Command Line: /bin/mame2003, /bin/mame2003-xtreme

@@ -1,6 +1,6 @@
 -----------------------
 Name: PocketCDG
-Version: March 1st 2020
+Version: April 27th 2020
 Creator: Redbug|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

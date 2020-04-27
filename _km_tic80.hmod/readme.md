@@ -1,6 +1,6 @@
 -----------------------
 Name: TIC-80
-Version: March 1st 2020
+Version: April 27th 2020
 Creator: Nesbox|Rob Loach|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

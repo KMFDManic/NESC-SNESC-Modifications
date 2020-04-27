@@ -1,2 +1,2 @@
 #!/bin/sh
-exec retroarch-clover km_puae_xtreme "$@" --ra-nosaves
+exec retroarch-clover km_puae_xtreme "$@"

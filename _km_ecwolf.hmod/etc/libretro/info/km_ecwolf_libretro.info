@@ -1,0 +1,17 @@
+display_name = "Wolfenstein 3D (km_ECWolf)"
+authors = "Braden Obrzut"
+supported_extensions = "wl6|n3d|sod|sdm|wl1|pk3|exe"
+corename = "ECWolf"
+manufacturer = "Id Software"
+categories = "Game"
+systemname = "Wolfenstein 3D Game Engine"
+systemid = "wolfenstein3d"
+database = "Wolfenstein 3D"
+license = "BSD|LGPL"
+permissions = ""
+supports_no_game = "false"
+notes = "(!) ecwolf.pk3 (md5): d68107770b3ba230d10aa27472a7617b"
+
+firmware_count = 1
+firmware0_desc = "ecwolf.pk3 (ECWolf System File)"
+firmware0_path = "ecwolf.pk3"

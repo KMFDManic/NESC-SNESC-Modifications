@@ -1,4 +1,4 @@
-#!/bin/sh
+exec retroarch-clover km_scummvm "$@"
 
 savepath="/var/saves"
 [ -d "$savepath" ] || savepath="/var/lib/clover/profiles/0"

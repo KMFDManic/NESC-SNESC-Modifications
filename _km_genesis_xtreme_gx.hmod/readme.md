@@ -1,6 +1,6 @@
 -----------------------
 Name: Genesis Xtreme GX
-Version: April 27th 2020
+Version: June 21st 2020
 Creator: Charles McDonald|Eke-Eke|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

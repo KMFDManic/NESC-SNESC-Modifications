@@ -1,6 +1,6 @@
 -----------------------
 Name: Mednafen Virtual Boy
-Version: March 1st 2020
+Version: February 24th 2021
 Creator: Mednafen Team|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

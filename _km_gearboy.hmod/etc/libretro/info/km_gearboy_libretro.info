@@ -1,4 +1,4 @@
-display_name = "Nintendo - Game Boy / Color (km_Gearboy)"
+display_name = "Nintendo - GB/GBC (km_Gearboy)"
 authors = "Ignacio Sanchez"
 supported_extensions = "gb|dmg|gbc|cgb|sgb"
 corename = "Gearboy"

@@ -1,4 +1,4 @@
-display_name = "Sony - PlayStation Portable (km_PPSSPP Legacy)"
+display_name = "Sony - PSP (km_PPSSPP Legacy)"
 authors = "Henrik Hrydgard"
 supported_extensions = "elf|iso|cso|prx|pbp"
 corename = "PPSSPP Legacy"

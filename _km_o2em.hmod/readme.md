@@ -1,6 +1,6 @@
 -----------------------
 Name: O2EM
-Version: March 1st 2020
+Version: February 24th 2021
 Creator: Daniel Boris|Andre de la Rocha|Arlindo M. de Oliveira|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

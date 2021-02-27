@@ -1,6 +1,6 @@
 -----------------------
 Name: PicoDrive
-Version: June 21st 2020
+Version: February 24th 2021
 Creator: notaz|fdave|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

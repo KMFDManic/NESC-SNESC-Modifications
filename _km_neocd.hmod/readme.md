@@ -1,6 +1,6 @@
 -----------------------
 Name: NeoCD
-Version: March 1st 2020
+Version: February 24th 2021
 Creator: Elta|Fabrice Martinez|Libretro
 HMOD By: KMFDManic|madmonkey|bslenul
 Category: KMFD Cores

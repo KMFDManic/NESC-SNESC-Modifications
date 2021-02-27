@@ -1,4 +1,4 @@
-display_name = "Nintendo - Game Boy Advance (km_Beetle GBA)"
+display_name = "Nintendo - GBA (km_Beetle GBA)"
 authors = "Forgotten|Mednafen Team"
 supported_extensions = "gba|agb|bin"
 corename = "Beetle GBA"

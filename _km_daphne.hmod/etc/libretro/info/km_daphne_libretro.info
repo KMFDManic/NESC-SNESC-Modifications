@@ -1,4 +1,4 @@
-display_name = "Arcade (km_Daphne)"
+display_name = "ARC (km_Daphne)"
 authors = "Matt Ownby"
 supported_extensions = "zip"
 corename = "Daphne"

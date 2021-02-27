@@ -1,4 +1,4 @@
-display_name = "Nintendo - Game Boy Advance (km_VBA-M)"
+display_name = "Nintendo - GBA (km_VBA-M)"
 authors = "Forgotten|VBA-M Team"
 supported_extensions = "dmg|gb|gbc|cgb|sgb|gba"
 corename = "VBA-M"

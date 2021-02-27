@@ -1,4 +1,4 @@
-display_name = "Nintendo - SNES / Famicom (km_Snes9x 2010)"
+display_name = "Nintendo - SNES (km_Snes9x 2010)"
 authors = "Snes9x Team|Squarepusher"
 supported_extensions = "smc|fig|sfc|gd3|gd7|dx2|bsx|swc|sfrom"
 corename = "Snes9x 2010"

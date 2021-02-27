@@ -1,4 +1,4 @@
-display_name = "Elektronika - +BK-0010/BK-0011(km_bk)"
+display_name = "Elektronika BK (km_bk)"
 authors = "Eric A. Edwards, Leonid A. Broukhis, emestee, arcade-mini, phcoder"
 supported_extensions = "bin"
 corename = "Elektronika BK"

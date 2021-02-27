@@ -1,6 +1,6 @@
 -----------------------
 Name: Vice Xtreme
-Version: June 21st 2020
+Version: February 24th 2021
 Creator: VICE Core Team Members|rsn8887|sonninnos|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

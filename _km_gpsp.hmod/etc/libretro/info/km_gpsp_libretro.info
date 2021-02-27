@@ -1,4 +1,4 @@
-display_name = "Nintendo - Game Boy Advance (km_gpSP)"
+display_name = "Nintendo - GBA (km_gpSP)"
 authors = "Exophase"
 supported_extensions = "gba|bin"
 corename = "gpSP"

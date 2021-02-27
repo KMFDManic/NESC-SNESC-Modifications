@@ -1,6 +1,6 @@
 -----------------------
 Name: Caprice32
-Version: March 1st 2020
+Version: February 24th 2021
 Creator: Ulrich Doewich|dantoine|Libretro
 HMOD By: KMFDManic|D_Skywalk
 Category: KMFD Cores

@@ -1,6 +1,6 @@
 -----------------------
 Name: QUASI88
-Version: April 27th 2020
+Version: February 24th 2021
 Creator: Showzoh Fukunaga|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

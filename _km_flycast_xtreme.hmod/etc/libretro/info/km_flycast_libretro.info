@@ -1,4 +1,4 @@
-display_name = "Sega - Dreamcast/NAOMI (km_Flycast Xtreme)"
+display_name = "Sega - DC (km_Flycast Xtreme)"
 authors = "flyinghead"
 supported_extensions = "chd|cdi|iso|elf|bin|cue|gdi|lst|zip|dat|7z"
 corename = "Flycast Xtreme"

@@ -1,6 +1,6 @@
 -----------------------
 Name: SameBoy (Slow)
-Version: March 1st 2020
+Version: February 24th 2021
 Creator: LIJI32|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

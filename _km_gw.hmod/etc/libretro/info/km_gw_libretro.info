@@ -1,4 +1,4 @@
-display_name = "Handheld Electronic (km_GW)"
+display_name = "Game & Watch (km_GW)"
 authors = "Andre Leiradella"
 supported_extensions = "mgw"
 corename = "GW"

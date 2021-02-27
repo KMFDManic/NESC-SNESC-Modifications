@@ -1,4 +1,4 @@
-display_name = "Nintendo - NES / Famicom (km_fixNES)"
+display_name = "Nintendo - NES (km_fixNES)"
 authors = "FIX94"
 supported_extensions = "nes|fds|qd|nsf"
 corename = "fixNES"

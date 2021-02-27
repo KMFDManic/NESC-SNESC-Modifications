@@ -1,5 +1,5 @@
 # Software Information
-display_name = "The 3DO Company - 3DO (km_Opera)"
+display_name = "3DO Company - 3DO (km_Opera)"
 authors = "trapexit|JohnnyDude|FreeDO team"
 supported_extensions = "iso|bin|chd|cue"
 corename = "Opera"

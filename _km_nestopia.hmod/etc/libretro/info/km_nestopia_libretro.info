@@ -1,4 +1,4 @@
-display_name = "Nintendo - NES / Famicom (km_Nestopia UE)"
+display_name = "Nintendo - NES (km_Nestopia UE)"
 authors = "Martin Freij|R. Belmont|R. Danbrook"
 supported_extensions = "nes|fds|unf|unif"
 corename = "Nestopia"

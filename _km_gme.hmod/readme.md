@@ -1,6 +1,6 @@
 -----------------------
 Name: Game Music Emu
-Version: April 27th 2020
+Version: February 24th 2021
 Creator: Blargg|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

@@ -1,6 +1,6 @@
 -----------------------
 Name: Handy
-Version: April 27th 2020
+Version: February 24th 2021
 Creator: K. Wilkins|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

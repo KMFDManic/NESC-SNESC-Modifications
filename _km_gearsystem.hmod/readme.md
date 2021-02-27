@@ -1,6 +1,6 @@
 -----------------------
 Name: Gearsystem
-Version: March 1st 2020
+Version: February 24th 2021
 Creator: Ignacio Sanchez|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

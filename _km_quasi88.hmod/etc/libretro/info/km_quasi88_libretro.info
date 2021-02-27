@@ -1,4 +1,4 @@
-display_name = "NEC - PC-8001 / PC-8801 (km_QUASI88)"
+display_name = "NEC - PC-88 (km_QUASI88)"
 authors = "Showzoh Fukunaga"
 supported_extensions = "d88"
 corename = "QUASI88"

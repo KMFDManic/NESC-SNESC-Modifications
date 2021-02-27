@@ -1,6 +1,6 @@
 -----------------------
 Name: NP2kai
-Version: April 27th 2020
+Version: February 24th 2021
 Creator: Neko Project II Team|Tomohiro Yoshidomi|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

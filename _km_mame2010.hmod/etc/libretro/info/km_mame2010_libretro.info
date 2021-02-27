@@ -1,4 +1,4 @@
-display_name = "Arcade (km_MAME 2010)"
+display_name = "ARC (km_MAME 2010)"
 authors = "MAMEdev"
 supported_extensions = "zip|7z|chd"
 corename = "MAME 2010 (0.139)"

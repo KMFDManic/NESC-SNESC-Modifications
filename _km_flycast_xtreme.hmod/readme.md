@@ -1,6 +1,6 @@
 -----------------------
 Name: Flycast Xtreme
-Version: March 1st 2020
+Version: February 24th 2021
 Creator: flyinghead|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

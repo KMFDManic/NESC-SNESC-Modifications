@@ -1,6 +1,6 @@
 -----------------------
 Name: Nestopia
-Version: June 23rd 2020
+Version: February 24th 2021
 Creator: Martin Freij|R.Belmont|R.Danbrook|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

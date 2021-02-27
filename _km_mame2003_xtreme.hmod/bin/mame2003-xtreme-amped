@@ -1,0 +1,2 @@
+#!/bin/sh
+exec retroarch-clover km_mame2003_xtreme_amped "$@"

@@ -1,4 +1,4 @@
-display_name = "Mattel - Intellivision (km_FreeIntv)"
+display_name = "Mattel - INT (km_FreeIntv)"
 authors = "David Richardson"
 supported_extensions = "int|bin|rom"
 corename = "FreeIntv"

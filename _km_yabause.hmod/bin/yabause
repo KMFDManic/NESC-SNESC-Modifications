@@ -1,2 +1,2 @@
 #!/bin/sh
-exec retroarch-clover km_yabause "$@"
+exec retroarch-clover km_yabause_x2 "$@"

@@ -1,2 +1,0 @@
-#!/bin/sh
-exec retroarch-clover km_vba_next "$@"

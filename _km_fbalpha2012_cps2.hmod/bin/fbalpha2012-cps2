@@ -1,2 +1,0 @@
-#!/bin/sh
-exec retroarch-clover km_fbalpha2012_cps2 "$@"

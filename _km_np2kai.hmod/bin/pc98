@@ -1,2 +1,2 @@
 #!/bin/sh
-exec retroarch-clover km_np2kai "$@"
+exec retroarch-clover km_nekop2 "$@"

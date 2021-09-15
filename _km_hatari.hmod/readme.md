@@ -1,6 +1,6 @@
 -----------------------
 Name: Hatari
-Version: February 24th 2021
+Version: September 14th 2021
 Creator: Nicolas Pomarède|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

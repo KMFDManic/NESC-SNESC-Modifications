@@ -1,6 +1,6 @@
 display_name = "Commodore - Amiga (P-UAE Xtreme Amped)"
 authors = "GnoStiC"
-supported_extensions = "adf|adz|dms|fdi|ipf|hdf|hdz|lha|cue|ccd|nrg|mds|iso|uae|m3u|zip"
+supported_extensions = "adf|adz|chd|dms|fdi|ipf|hdf|hdz|lha|cue|ccd|nrg|mds|iso|uae|m3u|zip"
 corename = "P-UAE Xtreme"
 manufacturer = "Commodore"
 categories = "Emulator"

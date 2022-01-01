@@ -1,6 +1,5 @@
 -----------------------
 Name: QuickNES
-Version: September 14th 2021
 Creator: blargg|kode54|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

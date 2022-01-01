@@ -1,6 +1,5 @@
 -----------------------
 Name: FreeChaF
-Version: September 14th 2021
 Creator: David Richardson|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

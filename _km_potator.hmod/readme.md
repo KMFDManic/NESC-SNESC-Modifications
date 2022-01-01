@@ -1,6 +1,5 @@
 -----------------------
 Name: Potator
-Version: September 14th 2021
 Creator: turtleletortue|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

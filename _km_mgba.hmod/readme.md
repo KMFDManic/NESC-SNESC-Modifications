@@ -1,6 +1,5 @@
 -----------------------
 Name: mGBA
-Version: September 14th 2021
 Creator: endrift|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

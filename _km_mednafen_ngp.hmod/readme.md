@@ -1,6 +1,5 @@
 -----------------------
 Name: Mednafen NGP
-Version: September 14th 2021
 Creator: neopop_uk|Mednafen Team|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

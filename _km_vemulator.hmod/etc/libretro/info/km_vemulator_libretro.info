@@ -1,5 +1,5 @@
 # Software Information
-display_name = Sega - Vemulator (km_Yabause X1)"
+display_name = "Sega - Vemulator (km_Vemulator)"
 authors = "Mahmoud Jaoune"
 supported_extensions = "vms|dci|bin"
 corename = "VeMUlator"

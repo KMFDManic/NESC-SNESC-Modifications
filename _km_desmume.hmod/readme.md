@@ -1,6 +1,5 @@
 -----------------------
 Name: DeSmuME
-Version: September 14th 2021
 Creator: YopYop156|Zeromus|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

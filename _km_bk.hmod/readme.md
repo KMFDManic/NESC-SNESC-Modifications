@@ -1,6 +1,5 @@
 -----------------------
 Name: Elektronika BK
-Version: September 14th 2021
 Creator: Eric A. Edwards|Leonid A. Broukhis|emestee|arcade-mini|phcoder|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

@@ -1,6 +1,5 @@
 -----------------------
 Name: Eighty-One
-Version: September 14th 2021
 Creator: Michael D Wynne|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

@@ -1,6 +1,5 @@
 -----------------------
 Name: VeMUlator
-Version: September 14th 2021
 Creator: Mahmoud Jaoune|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

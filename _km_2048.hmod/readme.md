@@ -1,6 +1,5 @@
 -----------------------
 Name: 2048
-Version: September 14th 2021
 Creator: Gabriele Cirulli|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

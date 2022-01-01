@@ -1,6 +1,5 @@
 -----------------------
 Name: fMSX
-Version: September 14th 2021
 Creator: Marat Fayzullin|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

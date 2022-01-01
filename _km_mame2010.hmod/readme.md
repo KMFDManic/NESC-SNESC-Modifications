@@ -1,6 +1,5 @@
 -----------------------
 Name: MAME 2010
-Version: September 14th 2021
 Creator: MAMEdev|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

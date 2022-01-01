@@ -1,6 +1,5 @@
 -----------------------
-Name: Mednafen SNES Faust
-Version: September 14th 2021
+Name: Mednafen SNES Faust Xtreme
 Creator: Mednafen Team|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

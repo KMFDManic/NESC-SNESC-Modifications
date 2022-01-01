@@ -1,6 +1,5 @@
 -----------------------
 Name: Mr.Boom
-Version: September 14th 2021
 Creator: Remdy|frranck|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

@@ -1,6 +1,5 @@
 -----------------------
-Name: FFmpeg
-Version: September 14th 2021
+Name: FFmpeg Movie Player
 Creator: Fabrice Bellard|FFmpeg team|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

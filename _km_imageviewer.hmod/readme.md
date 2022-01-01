@@ -1,6 +1,5 @@
 -----------------------
 Name: ImageViewer
-Version: September 14th 2021
 Creator: Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

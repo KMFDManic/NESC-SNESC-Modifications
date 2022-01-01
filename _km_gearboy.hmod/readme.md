@@ -1,6 +1,5 @@
 -----------------------
 Name: Gearboy
-Version: September 14th 2021
 Creator: Ignacio Sanchez|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

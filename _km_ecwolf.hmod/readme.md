@@ -1,6 +1,5 @@
 -----------------------
 Name: ECWolf
-Version: September 14th 2021
 Creator: Braden Obrzut|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

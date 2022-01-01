@@ -1,6 +1,5 @@
 -----------------------
 Name: Dinothawr
-Version: September 14th 2021
 Creator: Themaister|Agnes Heyer|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

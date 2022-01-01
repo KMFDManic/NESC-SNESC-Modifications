@@ -1,6 +1,5 @@
 -----------------------
 Name: BlueMSX
-Version: September 14th 2021
 Creator: Daniel Vik|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

@@ -1,6 +1,5 @@
 -----------------------
 Name: CrocoDS
-Version: September 14th 2021
 Creator: RedBug|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

@@ -1,6 +1,5 @@
 -----------------------
 Name: Vecx
-Version: September 14th 2021
 Creator: Valavan Manohararajah|John Hawthorn|Nikita Zimin|Demeth|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

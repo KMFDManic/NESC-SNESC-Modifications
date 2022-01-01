@@ -1,6 +1,5 @@
 -----------------------
 Name: X1 Millennium
-Version: September 14th 2021
 Creator: yui|Libretro
 HMOD By: KMFDManic|r-type
 Category: KMFD Cores

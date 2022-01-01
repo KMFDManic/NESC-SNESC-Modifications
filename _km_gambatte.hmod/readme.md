@@ -1,6 +1,5 @@
 -----------------------
 Name: Gambatte
-Version: September 14th 2021
 Creator: Sinamas|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

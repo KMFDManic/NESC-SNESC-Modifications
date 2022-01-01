@@ -1,0 +1,2 @@
+#!/bin/sh
+exec retroarch-clover km_ludicrousn64_xtreme_amped "$@" --ra-nosaves

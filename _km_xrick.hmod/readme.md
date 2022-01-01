@@ -1,6 +1,5 @@
 -----------------------
 Name: XRick
-Version: September 14th 2021
 Creator: Core Design|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

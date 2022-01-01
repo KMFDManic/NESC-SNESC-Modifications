@@ -1,6 +1,5 @@
 -----------------------
 Name: Game & Watch
-Version: September 14th 2021
 Creator: Andre Leiradella|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

@@ -1,6 +1,5 @@
 -----------------------
 Name: PCSX1
-Version: September 14th 2021
 Creator: PCSX Team|notaz|Exophase|Libretro
 HMOD By: KMFDManic|madmonkey
 Category: KMFD Cores

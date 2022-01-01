@@ -1,6 +1,5 @@
 -----------------------
 Name: Atari 800
-Version: September 14th 2021
 Creator: Petr Stehlik|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

@@ -1,6 +1,5 @@
 -----------------------
 Name: EasyRPG
-Version: September 14th 2021
 Creator: EasyRPG team|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

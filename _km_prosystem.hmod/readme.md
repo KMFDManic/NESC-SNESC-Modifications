@@ -1,6 +1,5 @@
 -----------------------
 Name: ProSystem
-Version: September 14th 2021
 Creator: Greg Stanton|Brian Berlin|Leonis|Greg DeMent|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

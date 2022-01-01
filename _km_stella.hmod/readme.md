@@ -1,6 +1,5 @@
 -----------------------
 Name: Stella
-Version: September 14th 2021
 Creator: Stephen Anthony|Bradford Mott|Eckhard Stolberg|Brian Watson|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

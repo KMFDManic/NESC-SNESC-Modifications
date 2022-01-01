@@ -1,6 +1,5 @@
 -----------------------
 Name: TyrQuake
-Version: September 14th 2021
 Creator: Kevin Shanahan (Tyrann)|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

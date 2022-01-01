@@ -1,6 +1,5 @@
 -----------------------
 Name: SMSPlus
-Version: September 14th 2021
 Creator: gameblabla|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

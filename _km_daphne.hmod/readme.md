@@ -1,6 +1,5 @@
 -----------------------
 Name: Daphne
-Version: September 14th 2021
 Creator: Matt Ownby|Libretro
 HMOD By: KMFDManic|madmonkey|bslenul
 Category: KMFD Cores

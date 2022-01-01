@@ -1,0 +1,2 @@
+#!/bin/sh
+exec retroarch-clover km_pcsx_hd_xtreme_accuracy "$@"

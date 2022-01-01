@@ -1,6 +1,5 @@
 -----------------------
 Name: Mednafen WonderSwan
-Version: September 14th 2021
 Creator: Team Mednafen|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores

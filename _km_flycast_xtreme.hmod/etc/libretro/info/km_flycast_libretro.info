@@ -1,6 +1,6 @@
 display_name = "Sega - DC (km_Flycast Xtreme)"
 authors = "flyinghead"
-supported_extensions = "chd|cdi|iso|elf|bin|cue|gdi|lst|zip|dat|7z"
+supported_extensions = "chd|cdi|iso|elf|bin|cue|gdi|lst|zip|dat|7z|m3u"
 corename = "Flycast Xtreme"
 manufacturer = "Sega"
 categories = "Emulator"

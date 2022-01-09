@@ -1,4 +1,4 @@
-display_name = "Nintendo - SNES / Famicom (km_Snes9x Bright)"
+display_name = "Nintendo - SNES (km_Snes9x Bright)"
 authors = "Snes9x Team"
 supported_extensions = "smc|sfc|swc|fig|bs|sfrom"
 corename = "Snes9x Bright"

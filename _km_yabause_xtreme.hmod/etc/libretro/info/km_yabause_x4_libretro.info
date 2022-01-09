@@ -1,7 +1,7 @@
 display_name = "Sega - Saturn (km_Yabause X4)"
 authors = "Guillaume Duhammel|Theo Berkau|Anders Montonen"
 supported_extensions = "bin|cue|iso|chd"
-corename = "Yabause"
+corename = "Yabause X4"
 manufacturer = "Sega"
 categories = "Emulator"
 systemname = "Saturn"

@@ -1,5 +1,5 @@
 # Software Information
-display_name = "Commodore - Amiga (UAE4ARM Xtreme)"
+display_name = "Commodore - Amiga (km_UAE4ARM Xtreme)"
 categories = "Emulator"
 authors = "TomB/Chips-fr"
 supported_extensions = "adf|dms|ipf|adz|wrp|zip|uae|lha|cue|ccd|iso|hdf"

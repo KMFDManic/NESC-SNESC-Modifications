@@ -1,0 +1,23 @@
+transfer_default
+chmod +x $rootfs/bin/*
+chmod +x $rootfs/usr/bin/*
+mkdir -p $rootfs/etc/libretro/system
+[ -f "/newroot/usr/share/kachikachi/fds_bios.bin" ] && cp -f /newroot/usr/share/kachikachi/fds_bios.bin $rootfs/etc/libretro/system/disksys.rom
+rm -f $rootfs/etc/libretro/joypad_autoconf/clovercon1.cfg
+rm -f $rootfs/etc/libretro/joypad_autoconf/clovercon2.cfg
+rm -f $rootfs/etc/libretro/joypad_autoconf/udev/Nintendo_Clovercon_-_controller1.cfg
+rm -f $rootfs/etc/libretro/joypad_autoconf/udev/Nintendo_Clovercon_-_controller2.cfg
+mkdir -p $rootfs/etc/options_menu/retroarch/default_files
+copy $rootfs/etc/libretro/retroarch.cfg $rootfs/etc/options_menu/retroarch/default_files/
+copy $rootfs/etc/libretro/retroarch-core-options.cfg $rootfs/etc/options_menu/retroarch/default_files/
+if [ -d "$rootfs/etc/libretro/.config/retroarch" ] && [ ! -L "$rootfs/etc/libretro/.config/retroarch" ]; then
+  rsync -ac "$rootfs/etc/libretro/.config/retroarch/" "$rootfs/etc/libretro/"
+  rm -rf "$rootfs/etc/libretro/.config/retroarch/"
+  ln -s ../ "$rootfs/etc/libretro/.config/retroarch"
+fi
+if [ ! -d "$rootfs/etc/libretro/.config/retroarch" ]; then
+  mkdir -p "$rootfs/etc/libretro/.config"
+  ln -s ../ "$rootfs/etc/libretro/.config/retroarch"
+fi
+rsync -avc $transferpath/mame/ $mountpoint/var/lib/clover/profiles/0/
+return 1

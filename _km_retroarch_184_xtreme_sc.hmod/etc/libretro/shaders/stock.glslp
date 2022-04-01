@@ -1,0 +1,3 @@
+shaders = 1
+
+shader0 = "/etc/libretro/shaders/stock.glsl"

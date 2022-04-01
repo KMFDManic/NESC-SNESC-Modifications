@@ -1,0 +1,353 @@
+#!/bin/sh
+
+source /etc/preinit
+script_init
+
+HOME="/etc/libretro"
+sys_folder="$HOME/system"
+corename="$1"
+noprefix="${corename#km_}"
+core="$HOME/core/${1}_libretro.so"
+rom="$2"
+game_path="$(dirname "$rom")"
+filename="$(basename "$rom")"
+id="${filename%.*}"
+extension="${filename##*.}"
+tmppath="/tmp/rom"
+rcache="/var/cache/retroarch"
+autosave="$rcache/$id.state.auto"
+usb_states="/media/$modname/retroarch/states"
+rsram="$rcache/$id.srm"
+t_suffix="_time.txt"
+clovercon_file="/dev/clovercon1"
+shift 2
+
+while [ $# -gt 0 ]; do
+  [ "$1" = "--load-state-file" ] && load="$2"
+  [ "$1" = "--save-on-quit" ] && save="$2"
+  [ "$1" = "--rollback-input-dir" ] && load="$2/savestate"
+  [ "$1" = "--rollback-output-dir" ] && save="$2/savestate"
+  [ "$1" = "--save-screenshot-on-quit" ] && screenshot="$2"
+  [ "$1" = "--save-data-backing-file" ] && sram="$2" && sram_folder="$(dirname "$sram")"
+  [ "$1" = "--shared-save" ] && shared_save="$2"
+  [ "$1" = "--graphic-filter" ] && filter="$2"
+  [ "$1" = "--video-mode" ] && [ "$2" = "crt-filter" ] && filter="crt720"
+  [ "$1" = "--video-mode" ] && [ "$2" = "keep-aspect-ratio" ] && filter="gpu720"
+  [ "$1" = "--video-mode" ] && [ "$2" = "pixel-perfect" ] && filter="ppu"
+  { [ "$1" = "--enable-smooth" ] || [ "$1" = "--smooth43" ]; } && smooth43="1"
+  [ "$1" = "--no-smooth" ] && no_smooth="1"
+  [ "$1" = "--enable-scanlines" ] && crt="1"
+  [ "$1" = "--no-scanlines" ] && no_scanlines="1"
+  [ "$1" = "--crt-mode" ] && smooth43="1" && crt="1"
+  [ "$1" = "--bezel-mode" ] && bezel_mode="1"
+  [ "$1" = "--title-code" ] && title_code="$2"
+  [ "$1" = "--ra-extra" ] && extra="$2"
+  [ "$1" = "--ra-nosaves" ] && nosaves="1"
+  [ "$1" = "--load-time-path" ] && timefile_load="$2"
+  [ "$1" = "--save-time-path" ] && timefile_save="$2"
+  [ "$1" = "--replay-inputs" ] && demo="1"
+  [ "$1" = "--decorative-frame-path" ] && frame="$2"
+  [ "$1" = "--debug-usb" ] && debug="/media/$modname"
+  [ "$1" = "--debug-nand" ] && debug="/tmp"
+  [ "$1" = "--nand-states" ] && [ ! -d "$usb_states" ] && nand_states="1"
+  [ "$1" = "--overclock" ] && overclock="1"
+  shift
+done
+
+# Restore default config file if "retroarch.cfg" is not found
+[ -f "$HOME/retroarch.cfg" ] || cp "$HOME/config/retroarch_default.cfg" "$HOME/retroarch.cfg"
+
+# Get "$title_code" on NESC and modify "$sram" if shared save is enabled
+[ -z "$title_code" ] && [ ! -z "$sram" ] && title_code="$(basename "$sram_folder")"
+[ ! -z "$shared_save" ] && [ ! -z "$sram" ] && sram="$(echo "$sram" | sed "s/$title_code/$shared_save/")"
+desktop_file="$gamepath/$title_code/$title_code.desktop"
+
+# Toggle bezel-mode with L/R
+# Hold L button while starting a game to toggle bezel-mode for this game, it simply adds/removes "--bezel-mode" in .desktop file
+if [ -e "$clovercon_file" ] && [ "$(cat "$clovercon_file")" = "0004" ]; then
+  if [ -z "$bezel_mode" ]; then
+    sed -i "s/^Exec.*/& --bezel-mode/" "$desktop_file" && bezel_mode="1"
+  else
+    sed -i "s/ --bezel-mode//g" "$desktop_file" && unset bezel_mode
+  fi
+fi
+# Hold R button while starting a game to toggle bezel-mode for this core, adds/removes name of the core in /etc/libretro/bezel-core
+if [ -e "$clovercon_file" ] && [ "$(cat "$clovercon_file")" = "0008" ]; then
+  [ ! -f "$HOME/bezel-core" ] && touch "$HOME/bezel-core"
+  if grep -w "$noprefix" "$HOME/bezel-core"; then
+    sed -i "/^$noprefix$/d" "$HOME/bezel-core"
+  else
+    echo "$noprefix" >> "$HOME/bezel-core"
+  fi
+fi
+[ -f "$HOME/bezel-core" ] && grep -w "$noprefix" "$HOME/bezel-core" && bezel_mode="1"
+
+# Check if Neo-Geo bios and game folder arent already mounted
+grep -q "$game_path/neogeo.zip" /proc/mounts && umount "$game_path/neogeo.zip"
+grep -q "$game_path " /proc/mounts && umount "$game_path"
+
+# IPS patch for roms extracted to /tmp/rom
+if [ "$game_path" = "$tmppath" ]; then
+  true_game_path="$(grep -Eo -m 1 "\S+\/$title_code" "$desktop_file")"
+  for i in bps ups ips; do
+    find "$true_game_path" -maxdepth 1 -iname "*.$i" -exec cp -f {} "$game_path/$id.$i" \;
+  done
+fi
+
+# Mount game folder with its save folder, useful for cores that save in content dir
+[ ! -z "$sram" ] && mount -t overlayfs overlay -o "rw,lowerdir=$game_path,upperdir=$sram_folder" "$game_path"
+
+# Variables for time file and demo mode + creating folders
+[ -z "$timefile_save" ] && timefile_save="$save$t_suffix"
+[ -z "$timefile_load" ] && timefile_load="$load$t_suffix"
+[ ! -z "$demo" ] && load="$(dirname "$load")/savestate"
+[ ! -z "$save" ] && mkdir -p "$(dirname "$save")"
+[ ! -z "$sram" ] && mkdir -p "$sram_folder"
+[ ! -z "$screenshot" ] && mkdir -p "$(dirname "$screenshot")"
+[ "$cfg_ra_write_test" = "y" ] && mkdir -p "$usb_states"
+mkdir -p "$rcache"
+
+# Moving suspend point to RA cache folder
+if [ ! -z "$load" ] && [ -f "$load" ] && [ -z "$nosaves" ]; then
+  if [ "$(hexdump -n 2 -e '1/1 "%02X"' "$load")" = "1F8B" ]; then
+    cp -f "$load" "$autosave.gz"
+    gunzip -f "$autosave.gz"
+  else
+    cp -f "$load" "$autosave"
+  fi
+fi
+
+# Moving and extracting states to RA cache folder if "--nand-states" is in command line, symlinking existing states on USB
+if [ -z "$nand_states" ]; then
+  if [ "$cfg_ra_write_test" = "y" ] && [ -d "$usb_states" ] && [ ! -z "$sram" ]; then
+    find "$usb_states" -maxdepth 1 -type f -name "$id.state*" -exec ln -s {} "$rcache" \;
+  fi
+elif [ ! -z "$sram" ]; then
+  mkdir -p "$sram_folder/ra_states"
+  find "$sram_folder/ra_states" -maxdepth 1 -type f -name "$id.state*.gz" | while read -r line; do
+    cp -f "$line" "$rcache" && gunzip -f "$rcache/$(basename "$line")"
+  done
+fi
+
+ln_srm(){
+  # Create a specific symlink to save file
+  # e.g. depending on core option Sega-CD with GPGX core can use either "name_of_the_game.brm" or "scd_U/J/E.brm", by linking these 3 to the first one we cover all scenarios
+  for i; do
+    ln -s "$rsram" "$rcache/$i"
+  done
+}
+
+new_srm(){
+  # For cores that dont use ".srm" save files, also creating a symlink minus extension just in case core is using "game.sav" instead of "game.gba.sav" for example
+  # If multiple extensions are specified, the first one will be considered as "$rsram", others will just be symlinks to that one
+  local ext="$1"
+  rsram="$rcache/$id.$ext"
+  shift
+  [ "$rsram" = "$rcache/${id%.*}.$ext" ] || ln -s "$rsram" "$rcache/${id%.*}.$ext"
+  for i; do
+    ln -s "$rsram" "$rcache/$id.$i"
+    [ "$rcache/$id.$i" = "$rcache/${id%.*}.$i" ] || ln -s "$rsram" "$rcache/${id%.*}.$i"
+  done
+}
+
+cp_adds(){
+  # Copy specified files/folders, e.g. MAME2003 is using a "mame2003" folder to store settings/high scores
+  for i; do
+    adds_restore="$adds_restore $i"
+    find "$sram_folder" -maxdepth 1 -iname "$i" -exec cp -rf {} "$rcache" \;
+  done
+}
+
+chk_ext(){
+  # Simply check extension of the file, or extension of "$id" in case its a .7z file for example
+  for i; do
+    [ "$extension" = "$i" ] || [ "${id##*.}" = "$i" ] && break
+  done || return 1
+}
+
+ngbios(){
+  # Mount Neo-Geo bios if needed
+  rm -f "$sram_folder/neogeo.zip"
+  [ -L "$game_path/neogeo.zip" ] && rm "$game_path/neogeo.zip"
+  [ -s "$game_path/neogeo.zip" ] && return 0
+  [ -f "$sys_folder/neogeo.zip" ] && ngbios="$sys_folder/neogeo.zip"
+  [ "$1" = "-old" ] && [ -f "$sys_folder/neogeo_old.zip" ] && ngbios="$sys_folder/neogeo_old.zip"
+  [ ! -z "$ngbios" ] && touch "$game_path/neogeo.zip" && mount_bind "$ngbios" "$game_path/neogeo.zip"
+}
+
+# Copying saves to RA cache folder, case part is for exceptions
+if [ ! -z "$sram" ]; then
+  case "$noprefix" in
+    puae*) cp_adds "WHDSaves" ;;
+    mame2000*|mame2003*)
+      cp_adds "mame*"
+      ngbios -old
+      ;;
+    mame*)
+      cp_adds "mame*"
+      ngbios
+      ;;
+    fbalpha2012*)
+      new_srm "nv" "fs"
+      ngbios
+      ;;
+    fbalpha*) cp_adds "fba" ;;
+    fbneo*) cp_adds "fbneo" ;;
+    genesis_plus_gx*)
+      if chk_ext "cue" "chd" "iso"; then
+        new_srm "brm"
+        cp_adds "cart.brm"
+        ln_srm "scd_U.brm" "scd_J.brm" "scd_E.brm"
+      fi
+      ;;
+    gpsp*) new_srm "sav" ;;
+    nestopia*) chk_ext "fds" && new_srm "sav" ;;
+    fceumm*) chk_ext "fds" && new_srm "sav" "srm" ;;
+    prboom*) cp_adds "$id" ;;
+    pcsx*) cp_adds "*.ldci" ;;
+  esac
+  [ -f "$sram" ] && cp -f "$sram" "$rsram"
+fi
+
+racfg(){
+  # Replace line in specified file, echo the unmodified line to a file if specified so it can be restored later
+  local name="$1"
+  local target="$2"
+  local current="$3"
+  [ -z "$current" ] || grep -w "${name%% *}" "$target" >> "$current"
+  sed -i "s|^${name%% *} .*|$name|" "$target"
+}
+
+# Disable auto load/save state settings
+if [ ! -z "$nosaves" ]; then
+  racfg "savestate_auto_load = \"false\"" "$HOME/retroarch.cfg"
+  racfg "savestate_auto_save = \"false\"" "$HOME/retroarch.cfg"
+fi
+
+# Modifying overlays .cfg files to point to current border
+grep -q "\"$frame.png\"" "$HOME/overlay/border.cfg" || racfg "overlay0_overlay = \"$frame.png\"" "$HOME/overlay/border.cfg"
+grep -q "\"$frame.png\"" "$HOME/overlay/border_with_scanlines.cfg" || racfg "overlay0_desc0_overlay = \"$frame.png\"" "$HOME/overlay/border_with_scanlines.cfg"
+
+# Modifying retroarch.cfg depending on filters and bezel-mode
+if [ ! -z "$bezel_mode" ]; then
+  while read -r line; do
+    racfg "$line" "$HOME/retroarch.cfg" "$rcache/current"
+  done < "$HOME/$filter"
+  # Enabling/disabling scanlines and bilinear if specified
+  [ ! -z "$no_scanlines" ] && racfg "input_overlay = \"~/overlay/border.cfg\"" "$HOME/retroarch.cfg"
+  [ ! -z "$crt" ] && racfg "input_overlay = \"~/overlay/border_with_scanlines.cfg\"" "$HOME/retroarch.cfg"
+  [ ! -z "$smooth43" ] && racfg "video_smooth = \"true\"" "$HOME/retroarch.cfg"
+  [ ! -z "$no_smooth" ] && racfg "video_smooth = \"false\"" "$HOME/retroarch.cfg"
+elif [ "$filter" = "crt720" ]; then
+  # Apply bilinear and scanlines if CRT mode is selected
+  racfg "video_smooth = \"true\"" "$HOME/retroarch.cfg" "$rcache/current"
+  racfg "input_overlay = \"~/overlay/scanlines.cfg\"" "$HOME/retroarch.cfg" "$rcache/current"
+  racfg "input_overlay_enable = \"true\"" "$HOME/retroarch.cfg" "$rcache/current"
+else
+  [ ! -z "$no_scanlines" ] && racfg "input_overlay = \"~/overlay/border.cfg\"" "$HOME/retroarch.cfg" "$rcache/current"
+  [ ! -z "$crt" ] && racfg "input_overlay = \"~/overlay/border_with_scanlines.cfg\"" "$HOME/retroarch.cfg" "$rcache/current"
+  [ ! -z "$smooth43" ] && racfg "video_smooth = \"true\"" "$HOME/retroarch.cfg" "$rcache/current"
+  [ ! -z "$no_smooth" ] && racfg "video_smooth = \"false\"" "$HOME/retroarch.cfg" "$rcache/current"
+fi
+  
+# Overclock if "--overclock" is set and downclock on exit, unless a manual OC was already applied
+overclock(){
+  local cpu_freq_path="/sys/devices/system/cpu/cpu0/cpufreq"
+  local cpu_boot_freq="$cpu_freq_path/cpuinfo_boot_freq"
+  local cpu_max_freq="$cpu_freq_path/cpuinfo_max_freq"
+  local cpu_max_scale="$cpu_freq_path/scaling_max_freq"
+  case "$1" in
+    start) [ "$(cat "$cpu_max_scale")" = "$(cat "$cpu_max_freq")" ] && unset overclock || cat "$cpu_max_freq" > "$cpu_max_scale" ;;
+    stop) [ "$(cat "$cpu_max_scale")" = "$(cat "$cpu_boot_freq")" ] || cat "$cpu_boot_freq" > "$cpu_max_scale" ;;
+  esac
+}
+[ ! -z "$overclock" ] && overclock start
+
+# Start timestamp
+ts="$(date +%s)"
+tm="0"
+[ -f "$timefile_load" ] && tm="$(cat "$timefile_load")"
+
+# Starting RetroArch
+if [ -z "$debug" ]; then
+  retroarch -c "$HOME/retroarch.cfg" -vfL "$core" "$rom" "$extra" &
+else
+  retroarch -c "$HOME/retroarch.cfg" -vfL "$core" "$rom" "$extra" > "$debug/$id.log" 2>&1 &
+fi
+rpid="$!"
+
+# Starting watchdog
+if [ -z "$demo" ]; then
+  retroarch_watchdog --pid "$rpid" | while read type button value duration; do
+    { { [ "$button" = "home" ] || [ "$button" = "reset" ]; } && [ "$value" = "1" ]; } || \
+    { [ "$button" = "power" ] && [ "$value" = "0" ]; } && kill "$rpid"
+  done
+else
+  # If in demo mode, quit on any button press or after 30 seconds
+  { sleep 30 && kill "$rpid"; } &
+  sleep_pid="$(pgrep -P "$!")"
+  retroarch_watchdog --any --pid "$rpid" | while read type button value duration; do
+    { { [ "$button" = "any" ] || [ "$button" = "reset" ]; } && [ "$value" = "1" ]; } || \
+    { [ "$button" = "power" ] && [ "$value" = "0" ]; } && kill -9 "$sleep_pid" && kill "$rpid"
+  done
+fi
+
+# Screenshot! It's not so fast, doing it in a background...
+if [ ! -z "$screenshot" ] && [ -z "$nosaves" ]; then
+  fbgrab -z 5 "$screenshot" &
+  sshot_pid="$!"
+fi
+
+# Moving suspend point to volatile folder for the console UI
+wait "$rpid"
+if [ ! -z "$save" ] && [ -f "$autosave" ] && [ -z "$nosaves" ]; then
+  gzip -f "$autosave" && mv -f "$autosave.gz" "$save"
+  ts2="$(date +%s)"
+  tm="$((tm + ts2 - ts))"
+  echo "$tm" > "$timefile_save"
+fi
+
+# Moving new states to /media/$modname/retroarch/states or gzipping and moving to /var/saves if "--nand-states" was in command line
+if [ -z "$nand_states" ]; then
+  [ "$cfg_ra_write_test" = "y" ] && [ -d "$usb_states" ] && find "$rcache" -maxdepth 1 -type f -regex ".*$id.state[0-9]*" -exec mv -f {} "$usb_states" \;
+else
+  if [ ! -z "$sram" ]; then
+    find "$rcache" -maxdepth 1 -type f -regex ".*$id.state[0-9]*" | while read -r line; do
+      gzip -f "$line" && mv -f "$line.gz" "$sram_folder/ra_states"
+    done
+  fi
+fi
+
+# Copying saves to /var/saves + files/folders from the "cp_adds" function
+if [ ! -z "$sram" ]; then
+  if [ ! -z "$adds_restore" ]; then
+    for i in $adds_restore; do
+      find "$rcache" -maxdepth 1 -iname "$i" -exec cp -rf {} "$sram_folder" \;
+    done
+  fi
+  [ -f "$rsram" ] && cp -f "$rsram" "$sram"
+fi
+
+# Restore modified retroarch.cfg lines if bezel-mode was enabled
+if [ -f "$rcache/current" ]; then
+  while read -r line; do
+    racfg "$line" "$HOME/retroarch.cfg"
+  done < "$rcache/current"
+fi
+
+# Restore auto load/save state settings
+if [ ! -z "$nosaves" ]; then
+  racfg "savestate_auto_load = \"true\"" "$HOME/retroarch.cfg"
+  racfg "savestate_auto_save = \"true\"" "$HOME/retroarch.cfg"
+fi
+
+# Cleanup
+[ ! -z "$sshot_pid" ] && wait "$sshot_pid"
+[ ! -z "$ngbios" ] && umount "$game_path/neogeo.zip"
+[ ! -z "$sram" ] && umount "$game_path"
+[ ! -z "$overclock" ] && overclock stop
+rm -rf "$tmppath"
+rm -rf "$rcache"
+
+# Back to the shell
+uistart

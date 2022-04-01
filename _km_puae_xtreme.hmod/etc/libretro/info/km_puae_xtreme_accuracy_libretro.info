@@ -1,4 +1,4 @@
-display_name = "Commodore - Amiga (P-UAE Xtreme Accuracy)"
+display_name = "Commodore - Amiga (km_P-UAE Xtreme Accuracy)"
 authors = "GnoStiC"
 supported_extensions = "adf|adz|dms|fdi|ipf|hdf|hdz|lha|cue|ccd|nrg|mds|iso|uae|m3u|zip"
 corename = "P-UAE Xtreme Accuracy"

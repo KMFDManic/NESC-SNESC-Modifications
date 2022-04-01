@@ -1,0 +1,4 @@
+shaders = 1
+
+shader0 = "default/flip-horizontal-mirror.glsl"
+filter_linear0 = true

@@ -1,0 +1,17 @@
+shaders = "1"
+
+textures = "iqLUT;scanLUT"
+iqLUT = "default/zfast_iqlut.png"
+iqLUT_linear = "false"
+iqLUT_mipmap = "false"
+scanLUT = "default/zfast_scanlut.png"
+scanLUT_linear = "false"
+scanLUT_mipmap = "false"
+
+shader0 = "default/zfast_crt_curve_vertical.glsl"
+filter_linear0 = "true"
+wrap_mode0 = "clamp_to_border"
+mipmap_input0 = "false"
+alias0 = ""
+float_framebuffer0 = "false"
+srgb_framebuffer0 = "false"

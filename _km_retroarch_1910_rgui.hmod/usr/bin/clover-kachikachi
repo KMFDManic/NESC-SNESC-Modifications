@@ -1,0 +1,39 @@
+#!/bin/sh
+
+source /etc/preinit
+script_init
+
+emulator="kachikachi"
+filename="$1"
+extension="${filename##*.}"
+cloverconFile="/dev/clovercon1"
+
+[ "$extension" = "qd" ] && emulator="kachikachi"
+racheck(){
+  while [ $# -gt 0 ]; do
+    [ "$1" = "--retroarch" ] && emulator="retroarch"
+    [ "$1" = "-retroarch" ] && emulator="retroarch"
+    [ "$1" = "--core" ] && core="$2"
+    [ "$1" = "-core" ] && core="$2"
+    shift
+  done
+}
+racheck ${1+"$@"}
+
+# Hold up to forcely disable retroarch
+[ -e "$cloverconFile" ] && [ "$(cat $cloverconFile)" = "1000" ] && emulator="kachikachi"
+# Hold down to forcely enable retroarch
+[ -e "$cloverconFile" ] && [ "$(cat $cloverconFile)" = "2000" ] && emulator="retroarch"
+
+[ -x "$squashfs/usr/bin/clover-kachikachi" ] || emulator="retroarch"
+
+if [ "$emulator" = "retroarch" ]; then
+  echo "using $emulator"
+  [ -z "$core" ] && exec nes ${1+"$@"}
+  [ -z "$core" ] || exec retroarch-clover "$core" ${1+"$@"}
+fi
+
+emulator="kachikachi"
+echo "using $emulator"
+exec "$squashfs/usr/bin/clover-kachikachi" ${1+"$@"}
+exit 1

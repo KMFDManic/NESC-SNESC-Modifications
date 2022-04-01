@@ -1,0 +1,52 @@
+#!/bin/sh
+
+uistop
+self="$(readlink -f "$0")"
+
+if [ -f "/bin/remote-exec" ]; then
+  if [ "$1" = "--rexec" ]; then
+    shift
+	rexec_ok="1"
+  else
+    echo "$self --rexec $@" > /var/exec.flag
+    exit 1
+  fi
+fi
+
+HOME="/etc/libretro"
+rcache="/var/cache/retroarch"
+mkdir -p "$rcache"
+
+[ -f "$HOME/retroarch.cfg" ] || cp "$HOME/config/retroarch_default.cfg" "$HOME/retroarch.cfg"
+
+racfg(){
+  local name="$1"
+  local target="$2"
+  sed -i "s|^${name%% *} .*|$name|" "$target"
+}
+
+racfg "savestate_auto_load = \"false\"" "$HOME/retroarch.cfg"
+racfg "savestate_auto_save = \"false\"" "$HOME/retroarch.cfg"
+
+if [ "$1" = "null" ]; then
+  retroarch -c "$HOME/retroarch.cfg" -vf &
+else
+  core="$HOME/core/${1}_libretro.so"
+  shift
+  retroarch -c "$HOME/retroarch.cfg" -vfL "$core" ${1+"$@"} &
+fi
+rpid="$!"
+
+if [ ! -z "$rexec_ok" ]; then
+  retroarch_watchdog --pid "$rpid" | while read type button value duration; do
+    { { [ "$button" = "home" ] || [ "$button" = "reset" ]; } && [ "$value" = "1" ]; } || \
+    { [ "$button" = "power" ] && [ "$value" = "0" ]; } && kill "$rpid"
+  done
+fi
+
+racfg "savestate_auto_load = \"true\"" "$HOME/retroarch.cfg"
+racfg "savestate_auto_save = \"true\"" "$HOME/retroarch.cfg"
+
+wait "$rpid"
+rm -rf "$rcache"
+uistart

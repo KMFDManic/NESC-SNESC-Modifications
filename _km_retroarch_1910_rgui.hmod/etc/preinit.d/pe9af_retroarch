@@ -1,0 +1,14 @@
+[ -f "$mountpoint/usr/bin/clover-kachikachi" ] && overmount /usr/bin/clover-kachikachi
+[ -f "$mountpoint/usr/bin/clover-canoe-shvc" ] && overmount /usr/bin/clover-canoe-shvc
+
+for i in system overlay database playlists system thumbnails; do
+  mkdir -p "$mountpoint/etc/libretro/$i"
+  [ -d "$mountpoint/media/$modname/retroarch/$i" ] && mount -t overlayfs -o lowerdir="$mountpoint/etc/libretro/$i",upperdir="$mountpoint/media/$modname/retroarch/$i" overlayfs "$mountpoint/etc/libretro/$i"
+done
+
+if touch "$mountpoint/media/$modname/raWriteTest" 2>/dev/null; then
+  cfg_ra_write_test='y'
+  rm -f "$mountpoint/media/$modname/raWriteTest"
+else
+  cfg_ra_write_test='n'
+fi

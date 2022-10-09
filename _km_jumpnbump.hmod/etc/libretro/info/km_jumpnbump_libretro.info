@@ -1,7 +1,7 @@
 display_name = "Jump 'n Bump (km_Jump 'n Bump)"
 categories = "Game engine"
 authors = "Philippe Simons"
-corename = "jumpnbump"
+corename = "Jump n' Bump"
 supported_extensions = "dat"
 license = "GPLv2"
 display_version = "v0.1"

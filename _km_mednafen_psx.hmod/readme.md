@@ -3,7 +3,7 @@ Name: Mednafen PSX Xtreme
 Creator: Mednafen Team|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores
-Emulated System: SONY: PS1
+Emulated System: Sony: PSX
 Command Line: /bin/mednafen-psx
 Prerequisite BIOS: system/scph5500.bin, scph5501.bin, scph5502.bin
 -----------------------

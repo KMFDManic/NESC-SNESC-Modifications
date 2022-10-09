@@ -4,7 +4,7 @@ Creator: KMFDManic|Gonetz|Mupen64Plus Team|Libretro
 HMOD By: KMFDManic
 Category: KMFD Cores
 Emulated System: Nintendo: N64
-Command Line: /bin/ludicrousn64-xtreme, /bin/ludicrousn64-xtreme-amped 
+Command Line: /bin/ludicrousn64-xtreme, /bin/ludicrousn64-xtreme-accuracy, /bin/ludicrousn64-xtreme-amped 
 -----------------------
 **Scroll down below for more details!**
 

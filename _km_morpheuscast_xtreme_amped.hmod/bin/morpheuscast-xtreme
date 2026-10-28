@@ -1,0 +1,2 @@
+#!/bin/sh
+exec morpheuscast ${1+"$@"}
